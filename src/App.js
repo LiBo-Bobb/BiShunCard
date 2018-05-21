@@ -24,6 +24,7 @@ import {
 } from 'react-weui';
 import './App.css';
 
+
 const api = window.apiSite;
 const detailDomain = 'http://www.gankao.com/diandu/app.html?book=';
 
@@ -87,37 +88,6 @@ export default class App extends Component {
         this.geeData_diandu()
         this.handleRecentBooks()
     }
-
-
-    //lodash
-    handleData = () => {
-        let users = [
-            {'user': 'barney', 'age': 36, 'active': true},
-            {'user': 'fred', 'age': 40, 'active': false},
-            {'user': 'pebbles', 'age': 1, 'active': true}
-        ];
-
-        // let chunk = chunk(['a', 'b', 'c', 'd'], 3)
-
-        let groupBy = groupBy(['one', 'two', 'three'], "length");
-        // console.log(groupBy)
-    }
-
-    Clock = (props) => {
-        return (
-            <div>
-                <h1>Hello, world!</h1>
-                <h2>It is {props.date.toLocaleTimeString()}.</h2>
-            </div>
-        );
-    }
-
-    // tick = () => {
-    //     ReactDOM.render(
-    //         <Clock date={new Date()}/>,
-    //         document.getElementById('root')
-    //     );
-    // }
 
 
     //获取数据
