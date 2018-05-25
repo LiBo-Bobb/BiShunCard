@@ -1,0 +1,47 @@
+.App {
+    padding: 0;
+    background: #f9f9f9;
+    max-width: 768px;
+    margin: 0 auto;
+    /*height: 600px;*/
+}
+
+.App .courseTitleArea {
+    height: 190px;
+    background: white;
+    display: flex;
+    overflow: hidden;
+    padding: 25px;
+}
+
+.leftCourseImg {
+    /*border: 1px solid red;*/
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+}
+
+.rightTextDesc {
+    /*border: 1px solid red;*/
+    float: left;
+}
+
+.catalogList {
+    margin-top: 10px;
+    padding-left: 20px;
+    background-color: white;
+    /*height: 600px;*/
+}
+
+.catalogList .catalogItem {
+    height: 65px;
+    border-bottom: 1px solid #ECECEC;
+    display: flex;
+    align-items: center;
+
+}
+
+.catalogList .catalogItem .textBox {
+
+
+}

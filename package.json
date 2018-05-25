@@ -3,12 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router": "^2.8.1",
-    "react-weui": "^1.0.3",
-    "superagent": "^3.5.2",
     "weui": "^1.1.0"
   },
   "devDependencies": {
