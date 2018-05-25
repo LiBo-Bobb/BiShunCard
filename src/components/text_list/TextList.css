@@ -1,0 +1,69 @@
+.TextBoxArea {
+    font-size: 16px;
+}
+
+.TextBoxArea .audioBigBox_gk{
+    /*border: 1px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.go_back {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background: #6796F4;
+}
+
+.TextList {
+
+}
+
+.TextList .textItemBox {
+    width: 33.3%;
+    /*background: #6796F4;*/
+    float: left;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.TextList .textItemBox .textItem {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 58px;
+    background-image: url(https://img.gankao.com/market/indexImg/1527057138792.PNG);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #417BEE;
+    font-family: SimSun,STKaiti,STSong;
+
+}
+
+.audioBox_gk {
+    display: flex;
+    margin-right: 10px;
+}
+
+.audioBox_gk .audioPinyin {
+    margin-right: 5px;
+    color: #417BEE;
+    font-size: 24px;
+
+}
+
+.textAudion {
+    width: 22px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+
