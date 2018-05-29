@@ -2,7 +2,6 @@ import 'babel-polyfill'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, hashHistory} from 'react-router';
-// import App from './App';
 import App from './components/app/App.js';
 import TextList from './components/text_list/TextList'
 import './index.css';

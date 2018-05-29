@@ -2,7 +2,7 @@
     font-size: 16px;
 }
 
-.TextBoxArea .audioBigBox_gk{
+.TextBoxArea .audioBigBox_gk {
     /*border: 1px solid red;*/
     display: flex;
     justify-content: center;
@@ -10,6 +10,7 @@
     margin-top: 20px;
 
 }
+
 .go_back {
     color: white;
     font-size: 18px;
@@ -20,6 +21,8 @@
 }
 
 .TextList {
+    overflow: hidden;
+    margin-top: 40px;
 
 }
 
@@ -42,13 +45,14 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     color: #417BEE;
-    font-family: SimSun,STKaiti,STSong;
+    font-family: SimSun, STKaiti, STSong;
 
 }
 
 .audioBox_gk {
     display: flex;
     margin-right: 10px;
+    position: relative;
 }
 
 .audioBox_gk .audioPinyin {
@@ -64,6 +68,13 @@
     display: flex;
     align-items: center;
 
+}
+
+.delete_comp {
+    position: absolute;
+    top: 65px;
+    right: 15px;
+    width: 20px;
 }
 
 

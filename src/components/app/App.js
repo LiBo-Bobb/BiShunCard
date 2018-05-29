@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router';
 import './App.css';
+
 const courseData = window.course_data_libo;
 export default class App extends Component {
     constructor(props) {
@@ -11,6 +12,7 @@ export default class App extends Component {
     componentDidMount() {
 
     }
+
 
     render() {
         let {courseName, courseDesc, courseBanner, lessonIcon, textBackImg, lesson} = courseData;
