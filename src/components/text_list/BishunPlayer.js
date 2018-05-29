@@ -26,6 +26,7 @@ export default class BishunPlayer extends Component {
             bishunColor: "#969696",
             //控制笔画结构的颜色
             controlIndex: -1,
+            isShowBishun:false,
         }
     };
 
@@ -55,7 +56,7 @@ export default class BishunPlayer extends Component {
                     // console.log("response.....",response)
                     //检查响应文本
                     response.json().then(function (data) {
-                        that.setState({textData: data})
+                        that.setState({textData: data,isShowBishun:true})
                         console.log("服务器响应的数据....", data)
                     });
                 }
@@ -103,9 +104,9 @@ export default class BishunPlayer extends Component {
 
 
     render() {
-        let {pinyin, controlIndex, textData, bishun} = this.state;
+        let {pinyin, controlIndex, textData, bishun,isShowBishun} = this.state;
         let arrBiShun = bishun.split(",");
-        // console.log("textData....", textData)
+        console.log("textData....", textData)
         return (<div className="topArea">
             {/*音频播放*/}
             {/*<div className="audioBigBox_gk">
@@ -117,6 +118,20 @@ export default class BishunPlayer extends Component {
             </div>*/}
             {/*笔顺动画组件start*/}
             <div style={{textAlign: "center", margin: "20px auto", paddingBottom: "20px"}}>
+                {isShowBishun&&<BiShunCanvas
+                    splitCallback={({loop}) => {
+                        // console.log("每个笔画开始.....", loop)
+                        // if (loop) {
+                        //     this.setState({controlIndex: controlIndex + 1})
+                        // } else {
+                        //     this.setState({controlIndex: -1, loop: false})
+                        // }
+                    }}
+                    fillColor={"#417BEE"}
+                    canvasData={textData}
+                    width={200}
+                    failCallback={this.canvasSupportError}
+                />}
                 {/*<BiShunCanvas
                     splitCallback={({loop}) => {
                         // console.log("每个笔画开始.....", loop)
