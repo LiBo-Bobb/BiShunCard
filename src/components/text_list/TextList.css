@@ -1,34 +1,48 @@
+.topArea{
+    padding-top: 20px;
+    background: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
 .TextBoxArea {
     font-size: 16px;
 }
 
 .TextBoxArea .audioBigBox_gk {
-    /*border: 1px solid red;*/
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
 
 }
 
 .go_back {
     color: white;
     font-size: 18px;
-    text-align: center;
+    /*text-align: center;*/
     height: 40px;
     line-height: 40px;
     background: #6796F4;
+    text-indent: 15px;
 }
 
 .TextList {
     overflow: hidden;
-    margin-top: 40px;
+    padding-top: 30px;
+    overflow-y:scroll;
+    background: white;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
 
 }
 
 .TextList .textItemBox {
     width: 33.3%;
-    /*background: #6796F4;*/
     float: left;
     margin-bottom: 40px;
     display: flex;
@@ -72,7 +86,7 @@
 
 .delete_comp {
     position: absolute;
-    top: 65px;
+    top: 27px;
     right: 15px;
     width: 20px;
 }

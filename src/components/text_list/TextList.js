@@ -1,11 +1,8 @@
 import React, {Component} from 'react';
 import {IndexLink} from 'react-router';
 import './TextList.css';
-import fetch from 'isomorphic-fetch'
-import BiShunCanvas from '../bishun/BiShunCanvas'
 import BishunPlayer from './BishunPlayer'
-import PinyinSpeakerList from "./PinyinSpeaker";
-import PinyinSpeaker from "./PinyinSpeaker";
+import catlog from '../../images/catlog.png'
 
 const courseData = window.course_data_libo;
 
@@ -44,7 +41,8 @@ export default class TextList extends Component {
             {!currentWord &&
             <IndexLink to="/">
                 <div className="go_back">
-                    返回目录id:{this.props.params.id}
+                    <span style={{width:"100%",marginRight:"10px",lineHeight:"100%"}}><img src={catlog} alt=""/></span>
+                    返回目录
                 </div>
             </IndexLink>
             }
@@ -55,7 +53,7 @@ export default class TextList extends Component {
                 word={currentWord}
             />
             }
-            <div className="TextList">
+            <div className="TextList" style={{top:currentWord?"355px":"45px"}}>
                 {lesson && lesson[lessonId].words.map((item, index) => {
                     return <div
                         onClick={() => {

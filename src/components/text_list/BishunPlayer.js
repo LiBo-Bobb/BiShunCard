@@ -3,12 +3,12 @@ import {Link} from 'react-router';
 import fetch from "isomorphic-fetch";
 import PinyinSpeaker from './PinyinSpeaker';
 import BiShunCanvas from '../bishun/BiShunCanvas';
+import BuShouSpeaker from './BuShouSpeaker'
 
 export default class BishunPlayer extends Component {
 
     constructor(props) {
         super(props);
-        console.log("props....", props)
         this.state = {
             textInfo: null,
             //笔画数量
@@ -26,19 +26,23 @@ export default class BishunPlayer extends Component {
             bishunColor: "#969696",
             //控制笔画结构的颜色
             controlIndex: -1,
-            isShowBishun:false,
+            isShowBishun: false,
         }
     };
 
     componentDidMount() {
         let {word} = this.props
-        console.log("word.....",word)
-        this.props.word && this.getBiShunData(this.props.word)
-        this.props.word && this.getTextDetailInfo(this.props.word)
+        if (this.props.word) {
+            this.getBiShunData(this.props.word)
+            this.getTextDetailInfo(this.props.word)
+        }
+
+
     }
 
     componentWillUnmount() {
-        console.log('componentDidUnMount.....')
+        // console.log('BiShunPlayer卸载.....')
+        this.setState({isShowBishun: false})
     }
 
 
@@ -56,8 +60,8 @@ export default class BishunPlayer extends Component {
                     // console.log("response.....",response)
                     //检查响应文本
                     response.json().then(function (data) {
-                        that.setState({textData: data,isShowBishun:true})
-                        console.log("服务器响应的数据....", data)
+                        that.setState({textData: data, isShowBishun: true})
+                        // console.log("服务器响应的数据....", data)
                     });
                 }
             )
@@ -103,55 +107,63 @@ export default class BishunPlayer extends Component {
     }
 
 
+    //每个笔画开始的回调函数
+    loop = ({loop}) => {
+        let {controlIndex} = this.state
+        if (loop) {
+            this.setState({controlIndex: controlIndex + 1})
+        } else {
+            // controlIndex = -1
+            this.setState({controlIndex: -1, loop: false})
+        }
+    }
+
+    delComp = () => {
+        let {onBishunPlayerClosed} = this.props
+        onBishunPlayerClosed()
+    }
+
     render() {
-        let {pinyin, controlIndex, textData, bishun,isShowBishun} = this.state;
+        let {pinyin, textData, bishun, isShowBishun, controlIndex, audioSrc} = this.state;
         let arrBiShun = bishun.split(",");
-        console.log("textData....", textData)
+
+
+        // console.log("textData....", textData)
+        // console.log("pinyin...",pinyin)
         return (<div className="topArea">
             {/*音频播放*/}
-            {/*<div className="audioBigBox_gk">
-                {pinyin.length && pinyin.map((item, index) => <PinyinSpeaker pinyin={item}/>)}
-
+            <div className="audioBigBox_gk">
+                {pinyin.length && pinyin.map((item, index) => <PinyinSpeaker audioSrc={audioSrc}
+                                                                             key={"pinyinItem" + index} pinyin={item}
+                                                                             index={index}/>)}
                 <div className="delete_comp" onClick={this.delComp}>
                     <img style={{width: "100%"}} src="https://img.gankao.com/market/indexImg/1527506508187.PNG" alt=""/>
                 </div>
-            </div>*/}
+            </div>
             {/*笔顺动画组件start*/}
             <div style={{textAlign: "center", margin: "20px auto", paddingBottom: "20px"}}>
-                {isShowBishun&&<BiShunCanvas
-                    splitCallback={({loop}) => {
-                        // console.log("每个笔画开始.....", loop)
-                        // if (loop) {
-                        //     this.setState({controlIndex: controlIndex + 1})
-                        // } else {
-                        //     this.setState({controlIndex: -1, loop: false})
-                        // }
-                    }}
+                {isShowBishun && <BiShunCanvas
+                    splitCallback={this.loop}
                     fillColor={"#417BEE"}
                     canvasData={textData}
                     width={200}
                     failCallback={this.canvasSupportError}
                 />}
-                {/*<BiShunCanvas
-                    splitCallback={({loop}) => {
-                        // console.log("每个笔画开始.....", loop)
-                        // if (loop) {
-                        //     this.setState({controlIndex: controlIndex + 1})
-                        // } else {
-                        //     this.setState({controlIndex: -1, loop: false})
-                        // }
-                    }}
-                    fillColor={"#417BEE"}
-                    canvasData={textData}
-                    width={200}
-                    failCallback={this.canvasSupportError}
-                />*/}
-                <div style={{marginTop: "15px"}}>
+                {!isShowBishun &&
+                <div style={{height: '200px'}}>loading </div>
+                }
+
+                <div style={{marginTop: "15px", display: "flex", justifyContent: "center"}}>
                     {(arrBiShun.length > 0)
                         ? arrBiShun.map((item, index) => {
                             // console.log("笔顺...", index, controlIndex)
-                            // let color = controlIndex === index ? "green" : "#B4B4B4";
-                            return <span style={{color:"red", marginRight: "5px"}} key={"bishun" + index}>{item}</span>
+                            let condition = controlIndex === index;
+                            let color = condition ? "green" : "#B4B4B4";
+                            // console.log("condition....",condition)
+                            return <span style={{color, marginRight: "5px"}} key={"bishun" + index}>
+                                {item}
+                                <BuShouSpeaker isCurrent={condition} BuShou={item}/>
+                                </span>
                         })
                         : ""}
                 </div>
