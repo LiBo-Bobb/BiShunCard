@@ -2,19 +2,27 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/dist/src/components/book_list/BookList.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/src/components/text_list/BishunPlayer.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/src/components/text_list/BuShouSpeaker.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/src/components/text_list/PinSpeaker.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/src/components/text_list/PinyinSpeaker.js" />
         <item url="file://$PROJECT_DIR$/dist/src/components/book_list/BookList.js" />
         <item url="file://$PROJECT_DIR$/dist/src/components/text_list/BishunPlayer.js" />
         <item url="file://$PROJECT_DIR$/dist/src/components/text_list/BuShouSpeaker.js" />
-        <item url="file://$PROJECT_DIR$/dist/src/components/text_list/PinSpeaker.js" />
         <item url="file://$PROJECT_DIR$/dist/src/components/text_list/PinyinSpeaker.js" />
         <item url="file://$PROJECT_DIR$/dist/src/components/text_list/TextList.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/dist/dist/src/components/book_list/BookList.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/src/components/text_list/BishunPlayer.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/src/components/text_list/BuShouSpeaker.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/src/components/text_list/PinSpeaker.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/src/components/text_list/PinyinSpeaker.js" />
       <root url="file://$PROJECT_DIR$/dist/src/components/book_list/BookList.js" />
       <root url="file://$PROJECT_DIR$/dist/src/components/text_list/BishunPlayer.js" />
       <root url="file://$PROJECT_DIR$/dist/src/components/text_list/BuShouSpeaker.js" />
-      <root url="file://$PROJECT_DIR$/dist/src/components/text_list/PinSpeaker.js" />
       <root url="file://$PROJECT_DIR$/dist/src/components/text_list/PinyinSpeaker.js" />
       <root url="file://$PROJECT_DIR$/dist/src/components/text_list/TextList.js" />
     </CLASSES>
