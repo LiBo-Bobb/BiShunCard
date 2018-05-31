@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router';
 import fetch from "isomorphic-fetch";
-import PinyinSpeaker from './PinyinSpeaker';
+import PinyinSpeaker from '../PinyinSpeaker/PinyinSpeaker';
 import BiShunCanvas from '../bishun/BiShunCanvas';
-import BuShouSpeaker from './BuShouSpeaker'
+import BuShouSpeaker from '../BuShouSpeaker/BuShouSpeaker'
 
 export default class BishunPlayer extends Component {
 
@@ -32,9 +31,9 @@ export default class BishunPlayer extends Component {
 
     componentDidMount() {
         let {word} = this.props
-        if (this.props.word) {
-            this.getBiShunData(this.props.word)
-            this.getTextDetailInfo(this.props.word)
+        if (word) {
+            this.getBiShunData(word)
+            this.getTextDetailInfo(word)
         }
 
 
