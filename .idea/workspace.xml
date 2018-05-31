@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcae147d-d273-42f5-861a-f0ce72d40aa7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/src/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/dist/src/index.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/book_data.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/book_list/BookList.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/images/bookImg.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/images/topBiShun.png" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/App.css" afterPath="$PROJECT_DIR$/src/components/single_book/SingleBook.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/app/App.js" afterPath="$PROJECT_DIR$/src/components/single_book/SingleBook.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/book_list/BookList.js" afterPath="$PROJECT_DIR$/src/components/book_list/BookList.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/text_list/BishunPlayer.js" afterPath="$PROJECT_DIR$/src/components/BishunPlayer/BishunPlayer.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/text_list/BuShouSpeaker.js" afterPath="$PROJECT_DIR$/src/components/BuShouSpeaker/BuShouSpeaker.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/text_list/PinyinSpeaker.js" afterPath="$PROJECT_DIR$/src/components/PinyinSpeaker/PinyinSpeaker.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/text_list/TextList.js" afterPath="$PROJECT_DIR$/src/components/text_list/TextList.js" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -338,12 +321,12 @@
       <workItem from="1527504362032" duration="9868000" />
       <workItem from="1527565668100" duration="28911000" />
       <workItem from="1527674274725" duration="148000" />
-      <workItem from="1527674628071" duration="20221000" />
+      <workItem from="1527674628071" duration="20362000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129465000" />
+    <option name="totallyTimeSpent" value="129606000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
