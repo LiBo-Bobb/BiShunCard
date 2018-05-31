@@ -30,6 +30,7 @@ export default class BiShunCanvas extends React.Component {
             splitDelay: mode === 'custom' ? splitDelay : (mode === 'fast' ? 300 : 1000),
             loopDelay: mode === 'custom' ? loopDelay : (mode === 'fast' ? 300 : 1000)
         }
+        this.unMounted=false
     }
     componentDidMount() {
         const {failCallback} = this.props
@@ -37,6 +38,11 @@ export default class BiShunCanvas extends React.Component {
         const ctx = canvas.getContext('2d')
         if (!ctx) failCallback()
         else this.drawContainer(ctx)
+    }
+
+    //销毁组件
+    componentWillUnmount() {
+        this.unMounted=true
     }
 
     drawContainer = (ctx) => {
@@ -94,6 +100,10 @@ export default class BiShunCanvas extends React.Component {
     }
 
     fillAnimation = (ctx, groupIndex, partIndex) => {
+
+        if(this.unMounted)
+            return null;
+
         const {canvasData, width = 100, fillColor = '#333', splitCallback} = this.props
         const {drawDelay, splitDelay, loopDelay} = this.state
         const {textFill} = canvasData
