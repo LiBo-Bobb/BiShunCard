@@ -16,47 +16,106 @@
             {
               "name": "快乐学汉字0",
               "words": [
-                "想",
-                "为",
-                "人",
-                "民",
-                "服",
-                "务",
-                "不",
-                "辛",
-                "苦"
+                {
+                  "isReaded": false,
+                  "word": "想"
+                },
+                {
+                  "isReaded": false,
+                  "word": "为"
+                },
+                {
+                  "isReaded": false,
+                  "word": "人"
+                },
+                {
+                  "isReaded": false,
+                  "word": "民"
+                },
+                {
+                  "isReaded": false,
+                  "word": "服"
+                },
+                {
+                  "isReaded": false,
+                  "word": "务"
+                },
+                {
+                  "isReaded": false,
+                  "word": "开"
+                },
+                {
+                  "isReaded": false,
+                  "word": "心"
+                }
               ]
             },
             {
               "name": "快乐学汉字1",
               "words": [
-                "飘",
-                "泼",
-                "大",
-                "雨"
+                {
+                  "isReaded": false,
+                  "word": "好"
+                },
+                {
+                  "isReaded": false,
+                  "word": "学"
+                },
+                {
+                  "isReaded": false,
+                  "word": "才"
+                },
+                {
+                  "isReaded": false,
+                  "word": "是"
+                },
+                {
+                  "isReaded": false,
+                  "word": "优"
+                },
+                {
+                  "isReaded": false,
+                  "word": "秀"
+                }
               ]
             },
             {
               "name": "快乐学汉字2",
               "words": [
-                "鹅",
-                "毛",
-                "大",
-                "雪"
+                {
+                  "isReaded": false,
+                  "word": "我"
+                },
+                {
+                  "isReaded": false,
+                  "word": "爱"
+                },
+                {
+                  "isReaded": false,
+                  "word": "你"
+                },
+                {
+                  "isReaded": false,
+                  "word": "们"
+                }
               ]
             },
             {
               "name": "快乐学汉字3",
               "words": [
-                "丁",
-                "汉"
+                {
+                  "isReaded": false,
+                  "word": "发"
+                }
               ]
             },
             {
               "name": "快乐学汉字4",
               "words": [
-                "丁",
-                "汉"
+                {
+                  "isReaded": false,
+                  "word": "游"
+                }
               ]
             }
           ]
@@ -75,55 +134,126 @@
             {
               "name": "w2w3q1231",
               "words": [
-                "大",
-                "汉",
-                "李",
-                "波",
-                "刘",
-                "陈",
-                "万",
-                "想",
-                "想",
-                "为",
-                "人",
-                "民",
-                "服",
-                "务",
-                "不",
-                "辛",
-                "苦"
+                {
+                  "isReaded": false,
+                  "word": "大"
+                },
+                {
+                  "isReaded": false,
+                  "word": "汉"
+                },
+                {
+                  "isReaded": false,
+                  "word": "李"
+                },
+                {
+                  "isReaded": false,
+                  "word": "波"
+                },
+                {
+                  "isReaded": false,
+                  "word": "万"
+                },
+                {
+                  "isReaded": false,
+                  "word": "为"
+                },
+                {
+                  "isReaded": false,
+                  "word": "人"
+                },
+                {
+                  "isReaded": false,
+                  "word": "服"
+                },
+                {
+                  "isReaded": false,
+                  "word": "不"
+                },
+                {
+                  "isReaded": false,
+                  "word": "辛"
+                },
+                {
+                  "isReaded": false,
+                  "word": "苦"
+                }
               ]
             },
             {
               "name": "快乐wqqweqwqew学汉字1",
               "words": [
-                "飘",
-                "泼",
-                "大",
-                "雨"
+                {
+                  "isReaded": false,
+                  "word": "飘"
+                },
+                {
+                  "isReaded": false,
+                  "word": "泼"
+                },
+                {
+                  "isReaded": false,
+                  "word": "大"
+                },
+                {
+                  "isReaded": false,
+                  "word": "雨"
+                }
               ]
             },
             {
               "name": "快乐学qweqweqw汉字2",
               "words": [
-                "鹅",
-                "毛",
-                "大",
-                "雪"
+                {
+                  "isReaded": false,
+                  "word": "鹅"
+                },
+                {
+                  "isReaded": false,
+                  "word": "毛"
+                },
+                {
+                  "isReaded": false,
+                  "word": "大"
+                },
+                {
+                  "isReaded": false,
+                  "word": "雪"
+                }
               ]
             },
             {
               "name": "快乐学汉qweqweq字3",
               "words": [
-                "丁",
-                "汉"
+                {
+                  "isReaded": false,
+                  "word": "热"
+                },
+                {
+                  "isReaded": false,
+                  "word": "爱"
+                },
+                {
+                  "isReaded": false,
+                  "word": "祖"
+                },
+                {
+                  "isReaded": false,
+                  "word": "国"
+                }
               ]
             },
             {
               "name": "快乐qweqwe学汉字4",
               "words": [
-                "丁",
-                "汉"
+                {
+                  "isReaded": false,
+                  "word": "恭"
+                },
+                {
+                  "isReaded": false,
+                  "word": "囍"
+                }
               ]
             }
           ]

@@ -12,16 +12,19 @@ export default class WordList extends Component {
         let {presspinyin, bookId, wordId} = props.params;
         //获取当前书的数据
         this.currentBookData = window.AllBooksForPress.filter(m => m.presspinyin === presspinyin)[0]["books"][bookId];
+        let {book_data: {lesson}} = this.currentBookData;
         // console.log(this.courseData)
         this.state = {
             //显示de汉字
-            currentWord: ''
+            currentWord: '',
+            //当前汉字的数组
+            currentWords: lesson[wordId].words,
         }
     }
 
 
     handleOnBishunPlayerClosed = () => {
-        this.setState({currentWord: 's'})
+        this.setState({currentWord: ''})
     }
 
 
@@ -37,14 +40,26 @@ export default class WordList extends Component {
 
     //点击某个汉字 ，将亲北京色变为灰色
     handleClickWord = (word) => {
+        let {book_data: {lesson}} = this.currentBookData;
+        let {wordId} = this.props.params;
+        let tmpWords = lesson[wordId].words;
+        // console.log("tmpWords.....", tmpWords)
+        for (let i of tmpWords) {
+            if (i.word === word) {
+                i.isReaded = true;
+            }
+        }
+
+        this.setState({currentWords: tmpWords})
+
 
     }
 
     render() {
-        let {book_data: {lesson}} = this.currentBookData;
-        let {currentWord} = this.state;
+
+        let {currentWord, currentWords} = this.state;
         //分别为书本的索引和课时的索引
-        let {presspinyin, bookId, wordId} = this.props.params;
+        let {presspinyin, bookId,} = this.props.params;
 
 
         return (
@@ -67,17 +82,20 @@ export default class WordList extends Component {
                     word={currentWord}
                 />
                 }
-                <div className="WordList" style={{top: currentWord ? "360px" : "45px"}}>
-                    {lesson && lesson[wordId].words.map((item, index) => {
+                <div className="WordList" style={{top: currentWord ? "336px" : "75px"}}>
+                    {currentWord &&
+                    <div style={{height: "1px", backgroundColor: "rgb(245,245,245)", marginBottom: "30px"}}></div>}
+
+                    {currentWords && currentWords.map((item, index) => {
                         return <div
                             onClick={() => {
-                                this.handleClickWord(item)
-                                this.setState({currentWord: item})
+                                this.handleClickWord(item.word)
+                                this.setState({currentWord: item.word})
                             }}
                             className="textItemBox"
                             key={"lesson" + index}>
-                            <div className="textItem">
-                                {item}
+                            <div style={{opacity: item.isReaded ? ".6" : ""}} className="textItem">
+                                {item.word}
                             </div>
                         </div>
                     })}

@@ -21,12 +21,10 @@ export default class WordList extends Component {
             //TODO: show error on page...
         }
 
-
-        console.log("pressData.....", pressData)
+        // console.log("pressData.....", pressData)
         let {pressname, books} = pressData[0];
         this.setState({bookData: books, pressname})
     }
-
 
     render() {
         let {bookData} = this.state;

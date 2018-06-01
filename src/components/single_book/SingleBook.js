@@ -19,7 +19,6 @@ export default class SingleBook extends Component {
     }
 
 
-
     /**
      * 根据订单id获取订单详细数据
      * @param  {[number]} id [订单ID]
@@ -35,7 +34,13 @@ export default class SingleBook extends Component {
 
         // console.log(" this.courseData..", this.courseData)
         let {book_data: {courseName, courseDesc, courseBanner, lessonIcon, textBackImg, lesson,}} = this.courseData;
-        let {presspinyin,bookId} = this.props.params
+        let {presspinyin, bookId} = this.props.params
+
+        // console.log("this.courseData....", this.courseData)
+        let wordCounts = lesson.reduce((pre, next) => {
+            return pre + next["words"].length;
+
+        }, 0)
         return (<div className="App">
             {this.props.children && this.props.children}
             {!this.props.children && <div>
@@ -54,7 +59,7 @@ export default class SingleBook extends Component {
                     </div>
                     <div className="rightTextDesc">
                         <h1 style={{fontSize: "17px", color: "#000000"}}>{courseName}</h1>
-                        <div style={{color: "#B4B4B4", fontSize: "14px", marginTop: "10px",}}>2222</div>
+                        <div style={{color: "#B4B4B4", fontSize: "14px", marginTop: "10px",}}>{wordCounts}个字</div>
                         <div
                             style={{
                                 color: "#B4B4B4",
@@ -65,10 +70,6 @@ export default class SingleBook extends Component {
                         </div>
                     </div>
                 </div>
-                {/*http://p8ej3yb7v.bkt.clouddn.com//%25E4%25B8%2581/pinyin0.mp3*/}
-                {/*  <audio controls src="../../audio/弯折.mp3">
-                    您的浏览器不支持 audio 标签。
-                </audio>*/}
                 {/*头部banner信息end*/}
                 <div className="catalogList">
                     {/*目录列表start*/}

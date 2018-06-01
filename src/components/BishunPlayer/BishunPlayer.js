@@ -48,7 +48,7 @@ export default class BishunPlayer extends Component {
 
     //获取笔画动画的数据...
     getBiShunData = (text) => {
-        let url = `http://p8ej3yb7v.bkt.clouddn.com//${encodeURI(encodeURI(text))}/canvasData.json`;
+        let url = `http://bishunfile.gankao.com//${encodeURI(encodeURI(text))}/canvasData.json`;
         let that = this;
         fetch(url)
             .then(
@@ -72,7 +72,7 @@ export default class BishunPlayer extends Component {
 
     //获取汉字具体信息
     getTextDetailInfo = (text) => {
-        let url = `http://p8ej3yb7v.bkt.clouddn.com//${encodeURI(encodeURI(text))}/bishun.json`;
+        let url = `http://bishunfile.gankao.com//${encodeURI(encodeURI(text))}/bishun.json`;
         let that = this;
         fetch(url)
             .then(

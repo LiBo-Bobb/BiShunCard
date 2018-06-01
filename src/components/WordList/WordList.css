@@ -30,7 +30,7 @@
 
 .WordList {
     overflow: hidden;
-    padding-top: 30px;
+    /*padding-top: 30px;*/
     overflow-y:scroll;
     background: white;
     position: fixed;
