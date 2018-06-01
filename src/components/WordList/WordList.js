@@ -1,17 +1,17 @@
 import React, {Component} from 'react';
-import {IndexLink,Link} from 'react-router';
-import './TextList.css';
+import {IndexLink, Link} from 'react-router';
+import './WordList.css';
 import BishunPlayer from '../BishunPlayer/BishunPlayer'
 import catlog from '../../images/catlog.png'
 
 
-export default class TextList extends Component {
+export default class WordList extends Component {
     constructor(props) {
         super(props)
         //获取书的索引
-        let {bookId} = props.params;
-        //获取某一本书的数据
-        this.courseData = window.bookData[bookId].book_data;
+        let {presspinyin, bookId, wordId} = props.params;
+        //获取当前书的数据
+        this.currentBookData = window.AllBooksForPress.filter(m => m.presspinyin === presspinyin)[0]["books"][bookId];
         // console.log(this.courseData)
         this.state = {
             //显示de汉字
@@ -21,7 +21,7 @@ export default class TextList extends Component {
 
 
     handleOnBishunPlayerClosed = () => {
-        this.setState({currentWord: ''})
+        this.setState({currentWord: 's'})
     }
 
 
@@ -34,17 +34,23 @@ export default class TextList extends Component {
         // console.log('卸载书本组卷........')
     }
 
+
+    //点击某个汉字 ，将亲北京色变为灰色
+    handleClickWord = (word) => {
+
+    }
+
     render() {
-        let {lesson = []} = this.courseData;
+        let {book_data: {lesson}} = this.currentBookData;
         let {currentWord} = this.state;
         //分别为书本的索引和课时的索引
-        let {bookId,textId} = this.props.params;
+        let {presspinyin, bookId, wordId} = this.props.params;
 
 
         return (
             <div className="TextBoxArea">
                 {!currentWord &&
-                <Link to={`/book-item/${bookId}`}>
+                <Link to={`/press/${presspinyin}/book/${bookId}`}>
                     <div className="go_back">
                         <span
                             style={{width: "100%", marginRight: "10px", lineHeight: "100%"}}>
@@ -61,11 +67,11 @@ export default class TextList extends Component {
                     word={currentWord}
                 />
                 }
-                <div className="TextList" style={{top: currentWord ? "355px" : "45px"}}>
-                    {lesson && lesson[textId].words.map((item, index) => {
+                <div className="WordList" style={{top: currentWord ? "360px" : "45px"}}>
+                    {lesson && lesson[wordId].words.map((item, index) => {
                         return <div
                             onClick={() => {
-                                // console.log("this.state...", this.state)
+                                this.handleClickWord(item)
                                 this.setState({currentWord: item})
                             }}
                             className="textItemBox"

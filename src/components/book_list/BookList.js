@@ -1,29 +1,36 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router';
+import {filter} from 'lodash';
 import './BookList.css'
 import topBiShun from '../../images/topBiShun.png';
 import bookImg from '../../images/bookImg.jpg'
-import catlog from '../../images/catlog.png'
 
 
-export default class TextList extends Component {
+export default class WordList extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            bookData: []
+            bookData: [],
+            pressname: ''
         }
     }
 
     componentDidMount() {
+        let pressData = filter(window.AllBooksForPress || [], m => m.presspinyin === this.props.params.presspinyin);
+        if (pressData.length === 0) {
+            //TODO: show error on page...
+        }
 
-        let bookData = window.bookData || [];
-        this.setState({bookData})
+
+        console.log("pressData.....", pressData)
+        let {pressname, books} = pressData[0];
+        this.setState({bookData: books, pressname})
     }
 
 
     render() {
-        // console.log("bookData...",bookData)
         let {bookData} = this.state;
+        let {presspinyin} = this.props.params;
 
         return (
             <div className="bookListBox">
@@ -36,7 +43,7 @@ export default class TextList extends Component {
 
                     <div className="bookListGk">
                         {bookData.map((item, index) => {
-                            return <Link to={`/book-item/${index}`} key={"bookItem" + index}>
+                            return <Link to={`/press/${presspinyin}/book/${index}`} key={"bookItem" + index}>
                                 <div className="bookItem">
                                     <div className="bookImg" style={{width: '90px', marginRight: "15px"}}>
                                         <img style={{width: "100%", height: "100%"}} src={bookImg} alt="图书封面"/>

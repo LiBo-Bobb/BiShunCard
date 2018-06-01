@@ -1,22 +1,24 @@
 import React, {Component} from 'react';
-import {Link,IndexLink} from 'react-router';
+import {Link, IndexLink} from 'react-router';
+import catlog from '../../images/catlog.png'
 import './SingleBook.css';
 //计算汉字的总数
 // const wordCounts = lesson.reduce((pre, next) => pre + next['words'].length, 0) || 0;
 export default class SingleBook extends Component {
     constructor(props) {
         super(props);
-        //课本索引
-        let {bookId} = this.props.params;
+        //出版社名称和课本索引
+        let {presspinyin, bookId} = this.props.params;
         //获取当前书本的信息
-        this.courseData = window.bookData[bookId];
-        this.state = {
-        }
+        this.courseData = window.AllBooksForPress.filter(m => m.presspinyin === presspinyin)[0]["books"][bookId];
+        this.state = {}
     };
 
     componentDidMount() {
 
     }
+
+
 
     /**
      * 根据订单id获取订单详细数据
@@ -30,15 +32,22 @@ export default class SingleBook extends Component {
     }
 
     render() {
+
+        // console.log(" this.courseData..", this.courseData)
         let {book_data: {courseName, courseDesc, courseBanner, lessonIcon, textBackImg, lesson,}} = this.courseData;
-        let {bookId} = this.props.params
+        let {presspinyin,bookId} = this.props.params
         return (<div className="App">
             {this.props.children && this.props.children}
             {!this.props.children && <div>
                 {/*头部banner信息start*/}
-                <IndexLink to="/" className="goIndexPage">
-                    返回
-                </IndexLink>
+                <Link to={`/press/${presspinyin}`}>
+                    <div className="goBookList">
+                        <span style={{marginRight: "5px"}}>
+                            <img src={catlog} alt=""/>
+                        </span>
+                        返回
+                    </div>
+                </Link>
                 <div className="courseTitleArea">
                     <div className="leftCourseImg">
                         <img style={{height: "150px"}} src={courseBanner} alt=""/>
@@ -64,7 +73,7 @@ export default class SingleBook extends Component {
                 <div className="catalogList">
                     {/*目录列表start*/}
                     {lesson.map((item, index) => {
-                        return <Link to={`/book-item/${bookId}/text-list/${index}`} key={"course" + index}>
+                        return <Link to={`press/${presspinyin}/book/${bookId}/word/${index}`} key={"course" + index}>
                             <div className="catalogItem">
                                 <div className="imgIcon"
                                      style={{marginRight: "20px", width: "35px", lineHeight: "100%"}}>

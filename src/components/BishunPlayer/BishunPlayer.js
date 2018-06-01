@@ -26,6 +26,7 @@ export default class BishunPlayer extends Component {
             //控制笔画结构的颜色
             controlIndex: -1,
             isShowBishun: false,
+            ifLast: false,
         }
     };
 
@@ -113,7 +114,7 @@ export default class BishunPlayer extends Component {
             this.setState({controlIndex: controlIndex + 1})
         } else {
             // controlIndex = -1
-            this.setState({controlIndex: -1, loop: false})
+            this.setState({controlIndex: -1, loop: false, ifLast: true})
         }
     }
 
@@ -123,7 +124,7 @@ export default class BishunPlayer extends Component {
     }
 
     render() {
-        let {pinyin, textData, bishun, isShowBishun, controlIndex, audioSrc} = this.state;
+        let {pinyin, textData, bishun, isShowBishun, controlIndex, audioSrc, ifLast} = this.state;
         let arrBiShun = bishun.split(",");
 
 
@@ -141,7 +142,9 @@ export default class BishunPlayer extends Component {
             </div>
             {/*笔顺动画组件start*/}
             <div style={{textAlign: "center", margin: "20px auto", paddingBottom: "20px"}}>
-                {isShowBishun && <BiShunCanvas
+                {isShowBishun &&
+                <BiShunCanvas
+                    splitDelay={2000}
                     splitCallback={this.loop}
                     fillColor={"#417BEE"}
                     canvasData={textData}
@@ -151,17 +154,18 @@ export default class BishunPlayer extends Component {
                 {!isShowBishun &&
                 <div style={{height: '200px'}}>loading </div>
                 }
-
                 <div style={{marginTop: "15px", display: "flex", justifyContent: "center"}}>
                     {(arrBiShun.length > 0)
                         ? arrBiShun.map((item, index) => {
                             // console.log("笔顺...", index, controlIndex)
                             let condition = controlIndex === index;
                             let color = condition ? "green" : "#B4B4B4";
-                            // console.log("condition....",condition)
                             return <span style={{color, marginRight: "5px"}} key={"bishun" + index}>
                                 {item}
-                                <BuShouSpeaker isCurrent={condition} BuShou={item}/>
+                                {!ifLast && <BuShouSpeaker
+                                    controlIndex={controlIndex}
+                                    isCurrent={condition}
+                                    BuShou={item}/>}
                                 </span>
                         })
                         : ""}

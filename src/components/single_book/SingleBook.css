@@ -41,5 +41,13 @@
 
 .catalogList .catalogItem .textBox {
 
+}
 
+.goBookList {
+    height: 40px;
+    background-color: #6796F4;
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+    text-indent: 15px;
 }

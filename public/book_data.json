@@ -1,128 +1,134 @@
 [
   {
-    "id": 0,
-    "name": "三年级语文(下)",
-    "book_data": {
-      "courseName": "写字入门-汉字的艺术",
-      "courseDesc": "sssss",
-      "courseBanner": "https://img.gankao.com/market/indexImg/1527057278801.PNG",
-      "lessonIcon": "https://img.gankao.com/market/indexImg/1527057320138.PNG",
-      "textBackImg": "https://img.gankao.com/market/indexImg/1527057138792.PNG",
-      "lesson": [
-        {
-          "name": "快乐学汉字0",
-          "words": [
-            "想",
-            "为",
-            "人",
-            "民",
-            "服",
-            "务",
-            "不",
-            "辛",
-            "苦"
-          ]
-        },
-        {
-          "name": "快乐学汉字1",
-          "words": [
-            "飘",
-            "泼",
-            "大",
-            "雨"
-          ]
-        },
-        {
-          "name": "快乐学汉字2",
-          "words": [
-            "鹅",
-            "毛",
-            "大",
-            "雪"
-          ]
-        },
-        {
-          "name": "快乐学汉字3",
-          "words": [
-            "丁",
-            "汉"
-          ]
-        },
-        {
-          "name": "快乐学汉字4",
-          "words": [
-            "丁",
-            "汉"
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "id": 1,
-    "name": "四年级语文(下)",
-    "book_data": {
-      "courseName": "我爱学汉字",
-      "courseDesc": "汉字是中国文化的精髓",
-      "courseBanner": "https://img.gankao.com/market/indexImg/1527057278801.PNG",
-      "lessonIcon": "https://img.gankao.com/market/indexImg/1527057320138.PNG",
-      "textBackImg": "https://img.gankao.com/market/indexImg/1527057138792.PNG",
-      "lesson": [
-        {
-          "name": "w2w3q1231",
-          "words": [
-            "大",
-            "汉",
-            "李",
-            "波",
-            "刘",
-            "陈",
-            "万",
-            "想",
-            "想",
-            "为",
-            "人",
-            "民",
-            "服",
-            "务",
-            "不",
-            "辛",
-            "苦"
-          ]
-        },
-        {
-          "name": "快乐wqqweqwqew学汉字1",
-          "words": [
-            "飘",
-            "泼",
-            "大",
-            "雨"
-          ]
-        },
-        {
-          "name": "快乐学qweqweqw汉字2",
-          "words": [
-            "鹅",
-            "毛",
-            "大",
-            "雪"
-          ]
-        },
-        {
-          "name": "快乐学汉qweqweq字3",
-          "words": [
-            "丁",
-            "汉"
-          ]
-        },
-        {
-          "name": "快乐qweqwe学汉字4",
-          "words": [
-            "丁",
-            "汉"
+    "presspinyin": "sanjia",
+    "pressname": "河南三甲文化",
+    "books": [
+      {
+        "id": 0,
+        "name": "三年级语文(下)",
+        "book_data": {
+          "courseName": "写字入门-汉字的艺术",
+          "courseDesc": "sssss",
+          "courseBanner": "https://img.gankao.com/market/indexImg/1527057278801.PNG",
+          "lessonIcon": "https://img.gankao.com/market/indexImg/1527057320138.PNG",
+          "textBackImg": "https://img.gankao.com/market/indexImg/1527057138792.PNG",
+          "lesson": [
+            {
+              "name": "快乐学汉字0",
+              "words": [
+                "想",
+                "为",
+                "人",
+                "民",
+                "服",
+                "务",
+                "不",
+                "辛",
+                "苦"
+              ]
+            },
+            {
+              "name": "快乐学汉字1",
+              "words": [
+                "飘",
+                "泼",
+                "大",
+                "雨"
+              ]
+            },
+            {
+              "name": "快乐学汉字2",
+              "words": [
+                "鹅",
+                "毛",
+                "大",
+                "雪"
+              ]
+            },
+            {
+              "name": "快乐学汉字3",
+              "words": [
+                "丁",
+                "汉"
+              ]
+            },
+            {
+              "name": "快乐学汉字4",
+              "words": [
+                "丁",
+                "汉"
+              ]
+            }
           ]
         }
-      ]
-    }
+      },
+      {
+        "id": 1,
+        "name": "四年级语文(下)",
+        "book_data": {
+          "courseName": "我爱学汉字",
+          "courseDesc": "汉字是中国文化的精髓",
+          "courseBanner": "https://img.gankao.com/market/indexImg/1527057278801.PNG",
+          "lessonIcon": "https://img.gankao.com/market/indexImg/1527057320138.PNG",
+          "textBackImg": "https://img.gankao.com/market/indexImg/1527057138792.PNG",
+          "lesson": [
+            {
+              "name": "w2w3q1231",
+              "words": [
+                "大",
+                "汉",
+                "李",
+                "波",
+                "刘",
+                "陈",
+                "万",
+                "想",
+                "想",
+                "为",
+                "人",
+                "民",
+                "服",
+                "务",
+                "不",
+                "辛",
+                "苦"
+              ]
+            },
+            {
+              "name": "快乐wqqweqwqew学汉字1",
+              "words": [
+                "飘",
+                "泼",
+                "大",
+                "雨"
+              ]
+            },
+            {
+              "name": "快乐学qweqweqw汉字2",
+              "words": [
+                "鹅",
+                "毛",
+                "大",
+                "雪"
+              ]
+            },
+            {
+              "name": "快乐学汉qweqweq字3",
+              "words": [
+                "丁",
+                "汉"
+              ]
+            },
+            {
+              "name": "快乐qweqwe学汉字4",
+              "words": [
+                "丁",
+                "汉"
+              ]
+            }
+          ]
+        }
+      }
+    ]
   }
 ]
