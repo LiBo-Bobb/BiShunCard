@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+
 export default class PinyinSpeaker extends Component {
 
     constructor(props) {
@@ -17,7 +18,7 @@ export default class PinyinSpeaker extends Component {
 
 
     render() {
-        let {pinyin,index,audioSrc} = this.props
+        let {pinyin, index, audioSrc} = this.props
         return (<div
             className="audioBox_gk">
             <div className="audioPinyin">
@@ -45,7 +46,6 @@ export default class PinyinSpeaker extends Component {
                     src="https://img.gankao.com/market/indexImg/1527126873904.PNG"
                     alt="小喇叭"/>
                 <audio ref={`audio${index}`}
-                    // controls
                        src={`${audioSrc}${index}.mp3`}>
                     该浏览器暂不支持音频
                 </audio>

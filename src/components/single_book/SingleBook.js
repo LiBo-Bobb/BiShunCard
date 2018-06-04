@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
-import {Link, IndexLink} from 'react-router';
-import catlog from '../../images/catlog.png'
+import {Link} from 'react-router';
 import './SingleBook.css';
-//计算汉字的总数
-// const wordCounts = lesson.reduce((pre, next) => pre + next['words'].length, 0) || 0;
+
 export default class SingleBook extends Component {
     constructor(props) {
         super(props);
@@ -25,18 +23,14 @@ export default class SingleBook extends Component {
      * @return {[order]}    [订单详细信息]
      */
 
-    getWordsCounts = () => {
 
-
-    }
 
     render() {
 
-        // console.log(" this.courseData..", this.courseData)
         let {book_data: {courseName, courseDesc, courseBanner, lessonIcon, textBackImg, lesson,}} = this.courseData;
         let {presspinyin, bookId} = this.props.params
 
-        // console.log("this.courseData....", this.courseData)
+        //计算这本书总共多少个汉字wq
         let wordCounts = lesson.reduce((pre, next) => {
             return pre + next["words"].length;
 
@@ -48,7 +42,7 @@ export default class SingleBook extends Component {
                 <Link to={`/press/${presspinyin}`}>
                     <div className="goBookList">
                         <span style={{marginRight: "5px"}}>
-                            <img src={catlog} alt=""/>
+                            <img src="https://img.gankao.com/market/indexImg/1528078756956.PNG" alt=""/>
                         </span>
                         返回
                     </div>

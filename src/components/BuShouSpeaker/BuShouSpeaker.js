@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 let audioDemo = "https://bishunfile.gankao.com/"
-let a = audioDemo + encodeURI("点") + ".mp3"
+// let a = audioDemo + encodeURI("点") + ".mp3"
 
 const BuShouAudio =
     {
@@ -12,7 +12,7 @@ const BuShouAudio =
         "横撇弯钩": audioDemo + encodeURI("横撇弯钩") + ".mp3",
         "横斜钩": audioDemo + encodeURI("横斜钩") + ".mp3",
         "横折": audioDemo + encodeURI("横折") + ".mp3",
-        "横折钩":audioDemo + encodeURI("横折钩") + ".mp3",
+        "横折钩": audioDemo + encodeURI("横折钩") + ".mp3",
         "横折弯": audioDemo + encodeURI("横折弯") + ".mp3",
         "横折弯": audioDemo + encodeURI("横折弯") + ".mp3",
         "横折弯钩": audioDemo + encodeURI("横折弯钩") + ".mp3",
@@ -47,6 +47,14 @@ export default class PinyinSpeaker extends Component {
 
     componentDidMount() {
 
+        // if (this.refs.music) {
+        //     this.refs.music.addEventListener("WeixinJSBridgeReady", function () {
+        //         this.refs.music.audio.play();
+        //     }, false);
+        //
+        // }
+
+
     }
 
     //销毁组件
@@ -60,6 +68,7 @@ export default class PinyinSpeaker extends Component {
             <div>
                 {isCurrent &&
                 <audio
+                    ref={isCurrent ? "music" : ""}
                     autoPlay={isCurrent}
                     src={BuShouAudio[BuShou]}
                 >

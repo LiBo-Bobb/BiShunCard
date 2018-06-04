@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import {IndexLink, Link} from 'react-router';
+import {Link} from 'react-router';
 import './WordList.css';
 import BishunPlayer from '../BishunPlayer/BishunPlayer'
-import catlog from '../../images/catlog.png'
 
 
 export default class WordList extends Component {
@@ -69,7 +68,7 @@ export default class WordList extends Component {
                     <div className="go_back">
                         <span
                             style={{width: "100%", marginRight: "10px", lineHeight: "100%"}}>
-                        <img src={catlog} alt=""/>
+                        <img src="https://img.gankao.com/market/indexImg/1528078756956.PNG" alt=""/>
                         </span>
                         返回目录
                     </div>
