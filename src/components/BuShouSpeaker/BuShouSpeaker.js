@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-let audioDemo = "http://bishunfile.gankao.com/"
+let audioDemo = "https://bishunfile.gankao.com/"
 let a = audioDemo + encodeURI("点") + ".mp3"
 
 const BuShouAudio =
