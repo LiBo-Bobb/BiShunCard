@@ -26,6 +26,11 @@ export default class BishunPlayer extends Component {
             //控制笔画结构的颜色
             controlIndex: -1,
             isShowBishun: false,
+            //偏旁部首是否是第一轮播放结束
+            ifLast: false,
+            //当前浏览器是否支持canvas  默认支持
+            isSupportCanvas: true,
+
         }
     };
 
@@ -39,6 +44,15 @@ export default class BishunPlayer extends Component {
 
     }
 
+    //canvas 创建失败
+    canvasSupportError = (e) => {
+        console.log("canvas创建失败.......", e)
+
+        this.setState({isSupportCanvas: false})
+
+
+    }
+
     componentWillUnmount() {
         // console.log('BiShunPlayer卸载.....')
         this.setState({isShowBishun: false})
@@ -46,15 +60,18 @@ export default class BishunPlayer extends Component {
 
 
     //获取笔画动画的数据...
-    getBiShunData = (text) => {
-        let url = `http://p8ej3yb7v.bkt.clouddn.com//${encodeURI(encodeURI(text))}/canvasData.json`;
+
+     getBiShunData = (text) => {
+        let url = `http://bishunfile.gankao.com//${encodeURI(encodeURI(text))}/canvasData.json`;
         let that = this;
         fetch(url)
             .then(
                 function (response) {
                     if (response.status !== 200) {
+
+                        that.setState({isSupportCanvas: false})
                         console.log("存在一个问题，状态码为：" + response.status);
-                        return;
+                        return null;
                     }
                     // console.log("response.....",response)
                     //检查响应文本
@@ -69,21 +86,22 @@ export default class BishunPlayer extends Component {
             });
     }
 
-    //获取汉字具体信息
-    getTextDetailInfo = (text) => {
-        let url = `http://p8ej3yb7v.bkt.clouddn.com//${encodeURI(encodeURI(text))}/bishun.json`;
+     //获取汉字具体信息
+     getTextDetailInfo = (text) => {
+        let url = `http://bishunfile.gankao.com//${encodeURI(encodeURI(text))}/bishun.json`;
         let that = this;
         fetch(url)
             .then(
                 function (response) {
                     if (response.status !== 200) {
-                        console.log("存在一个问题，状态码为：" + response.status);
+                        that.setState({isSupportCanvas: false})
+                        console.log("存在一个问题，状态码为222：" + response.status);
                         return;
                     }
                     //检查响应文本
                     response.json().then(function (data) {
                         let {bihuaCount, bishun, bushou, pinyin, structure} = data;
-                        let src = `http://p8ej3yb7v.bkt.clouddn.com//${encodeURI(encodeURI(text))}/pinyin`
+                        let src = `http://bishunfile.gankao.com//${encodeURI(encodeURI(text))}/pinyin`
                         that.setState({
                             textInfo: data,
                             bihuaCount,
@@ -106,69 +124,112 @@ export default class BishunPlayer extends Component {
     }
 
 
-    //每个笔画开始的回调函数
-    loop = ({loop}) => {
+     //每个笔画开始的回调函数
+     loop = ({loop}) => {
         let {controlIndex} = this.state
         if (loop) {
             this.setState({controlIndex: controlIndex + 1})
         } else {
             // controlIndex = -1
-            this.setState({controlIndex: -1, loop: false})
+            this.setState({controlIndex: -1, loop: false, ifLast: true})
         }
     }
-
-    delComp = () => {
+     //销毁播放器组件
+     delComp = () => {
         let {onBishunPlayerClosed} = this.props
         onBishunPlayerClosed()
     }
 
-    render() {
-        let {pinyin, textData, bishun, isShowBishun, controlIndex, audioSrc} = this.state;
+     render() {
+        let {pinyin, textData, bishun, isShowBishun, isSupportCanvas, currentText, controlIndex, audioSrc, ifLast} = this.state;
         let arrBiShun = bishun.split(",");
-
-
-        // console.log("textData....", textData)
-        // console.log("pinyin...",pinyin)
+        let {word} = this.props
+        // console.log("word.....", word)
+        // console.log(typeof word)
+        let jif = ""
+        if (word) {
+            jif = `https://bishunfile.gankao.com/${encodeURI(encodeURI(word))}.gif`
+        }
+        // console.log("jif.......",jif)
+        // console.log("isSupportCanvas.....",isSupportCanvas)
         return (<div className="topArea">
-            {/*音频播放*/}
-            <div className="audioBigBox_gk">
-                {pinyin.length && pinyin.map((item, index) => <PinyinSpeaker audioSrc={audioSrc}
-                                                                             key={"pinyinItem" + index} pinyin={item}
-                                                                             index={index}/>)}
-                <div className="delete_comp" onClick={this.delComp}>
-                    <img style={{width: "100%"}} src="https://img.gankao.com/market/indexImg/1527506508187.PNG" alt=""/>
-                </div>
-            </div>
-            {/*笔顺动画组件start*/}
-            <div style={{textAlign: "center", margin: "20px auto", paddingBottom: "20px"}}>
-                {isShowBishun && <BiShunCanvas
+            {/*音频播放start*/
+}
+<div className="audioBigBox_gk">
+    {pinyin.length
+        ? pinyin.map((item, index) =>
+            <PinyinSpeaker
+                audioSrc={audioSrc}
+                key={"pinyinItem" + index} pinyin={item}
+                index={index}
+            />) : ""
+    }
+    <div className="delete_comp" onClick={this.delComp}>
+        <img style={{width: "100%"}} src="https://img.gankao.com/market/indexImg/1527506508187.PNG" alt=""/>
+    </div>
+</div>
+{/*音频播放end*/
+}
+
+
+{/*笔顺动画组件start*/
+}
+{
+    isSupportCanvas
+        ? <div style={{textAlign: "center", margin: "20px auto", paddingBottom: "20px"}}>
+            {(isShowBishun)
+                ? <BiShunCanvas
+                    splitDelay={2000}
                     splitCallback={this.loop}
-                    fillColor={"#417BEE"}
+                    fillColor={'#417BEE'}
+                    crossColor={'#417BEE'}
+                    textFillColor={'#cad8e4'}
                     canvasData={textData}
                     width={200}
                     failCallback={this.canvasSupportError}
-                />}
-                {!isShowBishun &&
-                <div style={{height: '200px'}}>loading </div>
+                />
+                : ""}
+            {!isShowBishun &&
+            <div style={{height: '200px', lineHeight: "200px"}}>正在加载中...</div>
+            }
+            {/*偏旁部首start*/}
+            <div style={{marginTop: "15px", display: "flex", justifyContent: "center"}}>
+                {(arrBiShun.length > 0)
+                    ? arrBiShun.map((item, index) => {
+                        let condition = controlIndex === index;
+                        let color = condition ? "green" : "#B4B4B4";
+                        return (<span
+                            style={{color, marginRight: "5px"}}
+                            key={"bishun" + index}>
+                                    {item}
+                            {!ifLast && <BuShouSpeaker
+                                controlIndex={controlIndex}
+                                isCurrent={condition}
+                                BuShou={item}/>}
+                                </span>)
+                    })
+                    : ""
                 }
-
-                <div style={{marginTop: "15px", display: "flex", justifyContent: "center"}}>
-                    {(arrBiShun.length > 0)
-                        ? arrBiShun.map((item, index) => {
-                            // console.log("笔顺...", index, controlIndex)
-                            let condition = controlIndex === index;
-                            let color = condition ? "green" : "#B4B4B4";
-                            // console.log("condition....",condition)
-                            return <span style={{color, marginRight: "5px"}} key={"bishun" + index}>
-                                {item}
-                                <BuShouSpeaker isCurrent={condition} BuShou={item}/>
-                                </span>
-                        })
-                        : ""}
-                </div>
             </div>
-            {/*笔顺动画组件end*/}
-        </div>);
-    }
+            {/*偏旁部首end*/}
+        </div>
+        : <div style={{width: "200px", margin: "40px auto"}}>
+            {/*如果浏览器不兼容canvas，就使用jif*/}
+            <img style={{width: "100%"}}
+                 src={jif} alt=""/>
+        </div>
+}
+{/*
+            {!isSupportCanvas&&<div style={{width: "200px", margin: "40px auto"}}>
+                如果浏览器不兼容canvas，就使用jif
+                <img style={{width: "100%"}}
+                     src={jif} alt=""/>
+            </div>}*/
+}
+{/*笔顺动画组件end*/
+}
+</div>)
+;
+}
 }
 

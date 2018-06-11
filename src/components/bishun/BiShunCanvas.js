@@ -28,21 +28,26 @@ export default class BiShunCanvas extends React.Component {
             id: `BSCanvas${id}`,
             drawDelay: mode === 'custom' ? drawDelay : (mode === 'fast' ? 90 : 120),
             splitDelay: mode === 'custom' ? splitDelay : (mode === 'fast' ? 300 : 1000),
-            loopDelay: mode === 'custom' ? loopDelay : (mode === 'fast' ? 300 : 1000)
+            loopDelay: mode === 'custom' ? loopDelay : (mode === 'fast' ? 300 : 1000),
         }
-        this.unMounted=false
+        this.unMounted = false
     }
+
     componentDidMount() {
         const {failCallback} = this.props
+
         const canvas = document.getElementById(this.state.id)
         const ctx = canvas.getContext('2d')
         if (!ctx) failCallback()
         else this.drawContainer(ctx)
     }
 
+
+
+
     //销毁组件
     componentWillUnmount() {
-        this.unMounted=true
+        this.unMounted = true
     }
 
     drawContainer = (ctx) => {
@@ -57,12 +62,17 @@ export default class BiShunCanvas extends React.Component {
         }
         ctx.lineWidth = borderWidth
         ctx.strokeStyle = crossColor
-        ctx.setLineDash([5, 10])
+        ctx.setLineDash([5, 8])
         ctx.beginPath()
         ctx.moveTo(width / 2, 0)
         ctx.lineTo(width / 2, width)
         ctx.moveTo(0, width / 2)
         ctx.lineTo(width, width / 2)
+        ctx.setLineDash([5, 10])
+        ctx.moveTo(0, 0)
+        ctx.lineTo(width, width)
+        ctx.moveTo(0, width)
+        ctx.lineTo(width, 0)
         ctx.stroke()
 
         this.drawText(ctx)
@@ -72,8 +82,10 @@ export default class BiShunCanvas extends React.Component {
         const {canvasData, width = 100, textFillColor = '#fff'} = this.props
         const {textBg} = canvasData
 
-        ctx.setLineDash([3 ,5])
-        ctx.strokeStyle = "#333"
+        ctx.lineWidth = 2
+        ctx.setLineDash([1])
+        ctx.strokeStyle = "#cad8e4"
+        ctx.fillStyle = '#cad8e4'
         let GroupLen = textBg.length
         while (GroupLen--) {
             ctx.beginPath()
@@ -94,15 +106,13 @@ export default class BiShunCanvas extends React.Component {
         ctx.closePath();
         ctx.stroke()
 
-        setTimeout(() => {
+        this.drawTextTimeount = setTimeout(() => {
             this.fillAnimation(ctx, 0, 0)
         }, 500)
     }
 
     fillAnimation = (ctx, groupIndex, partIndex) => {
-
-        if(this.unMounted)
-            return null;
+        if(this.unMounted) return null
 
         const {canvasData, width = 100, fillColor = '#333', splitCallback} = this.props
         const {drawDelay, splitDelay, loopDelay} = this.state
@@ -118,7 +128,7 @@ export default class BiShunCanvas extends React.Component {
         else if (splitCallback && partIndex === 0) splitCallback({loop: true})
 
         if (groupIndex >= textFill.length) {
-            setTimeout(() => {
+            this.loopTimeount = setTimeout(() => {
                 this.drawContainer(ctx)
             }, loopDelay)
         } else {
@@ -136,20 +146,20 @@ export default class BiShunCanvas extends React.Component {
             ctx.stroke()
 
             if (partIndex >= textFill[groupIndex].length) {
-                setTimeout(() => {
+                this.fillTimeount = setTimeout(() => {
                     this.fillAnimation(ctx, (groupIndex + 1), 0)
                 }, splitDelay)
             } else {
-                setTimeout(() => {
+                this.fillTimeount = setTimeout(() => {
                     this.fillAnimation(ctx, groupIndex, partIndex)
                 }, drawDelay)
             }
         }
     }
 
+
     render() {
         const {width = 100} = this.props
-
         return <canvas id={this.state.id} width={width} height={width}></canvas>
     }
 
