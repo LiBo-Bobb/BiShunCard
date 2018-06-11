@@ -1,57 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcae147d-d273-42f5-861a-f0ce72d40aa7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WordList/WordList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/press_list/PressList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/press_list/pressList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/dist/src/components/book_list/BookList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/dist/src/components/book_list/BookList.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/dist/src/components/text_list/BishunPlayer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/dist/src/components/text_list/BishunPlayer.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/dist/src/components/text_list/BuShouSpeaker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/dist/src/components/text_list/BuShouSpeaker.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/dist/src/components/text_list/PinSpeaker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/dist/src/components/text_list/PinSpeaker.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/dist/src/components/text_list/PinyinSpeaker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/dist/src/components/text_list/PinyinSpeaker.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/components/book_list/BookList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/components/book_list/BookList.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/components/text_list/BishunPlayer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/components/text_list/BishunPlayer.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/components/text_list/BuShouSpeaker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/components/text_list/BuShouSpeaker.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/components/text_list/PinSpeaker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/components/text_list/PinSpeaker.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/components/text_list/PinyinSpeaker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/components/text_list/PinyinSpeaker.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/components/text_list/TextList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/components/text_list/TextList.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/book_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/book_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BishunPlayer/BishunPlayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BishunPlayer/BishunPlayer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BuShouSpeaker/BuShouSpeaker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BuShouSpeaker/BuShouSpeaker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PinyinSpeaker/PinyinSpeaker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PinyinSpeaker/PinyinSpeaker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/bishun/BiShunCanvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/bishun/BiShunCanvas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/book_list/BookList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/book_list/BookList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/single_book/SingleBook.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/single_book/SingleBook.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/single_book/SingleBook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/single_book/SingleBook.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/text_list/TextList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WordList/WordList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/text_list/TextList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/banner1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/bookIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/bookImg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/catlog.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/topBiShun.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="fcae147d-d273-42f5-861a-f0ce72d40aa7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -97,8 +47,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="335">
+              <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -393,12 +343,12 @@
       <workItem from="1528506795279" duration="8495000" />
       <workItem from="1528522291727" duration="878000" />
       <workItem from="1528523566125" duration="2258000" />
-      <workItem from="1528678096570" duration="3018000" />
+      <workItem from="1528678096570" duration="3219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222135000" />
+    <option name="totallyTimeSpent" value="222336000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -636,8 +586,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="335">
+          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
