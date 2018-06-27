@@ -8,9 +8,8 @@ import BookList from './components/book_list/BookList'
 import PressList from './components/press_list/PressList'
 import './index.css';
 import fetch from "isomorphic-fetch";
-
-//`https://bishunfile.gankao.com/book_data.json?a=${Math.random()}`
-fetch(`https://bishunfile.gankao.com/book_data.json?a=${Math.random()}`, {
+// `//bishunfile.gankao.com/book_data.json?a=${Math.random()}`
+fetch(`//bishunfile.gankao.com/book_data.json?v=${Math.random()}`, {
     method: 'GET'
 }).then(
     function (response) {
@@ -18,7 +17,6 @@ fetch(`https://bishunfile.gankao.com/book_data.json?a=${Math.random()}`, {
             console.log("存在一个问题，状态码为：" + response.status);
             return;
         }
-        // console.log(response)
         response.json().then(function (data) {
             window.AllBooksForPress = data;
             let route = <Router history={hashHistory}>

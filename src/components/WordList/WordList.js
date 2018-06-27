@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router';
 import './WordList.css';
 import BishunPlayer from '../BishunPlayer/BishunPlayer'
 import {Helmet} from 'react-helmet';
@@ -11,14 +10,19 @@ export default class WordList extends Component {
         let {presspinyin, bookId, wordId} = props.params;
         //获取当前书的数据
         this.currentBookData = window.AllBooksForPress.filter(m => m.presspinyin === presspinyin)[0]["books"][bookId];
-        let {book_data: {lesson}} = this.currentBookData;
+        let {book_data: {lesson, courseBanner}, name} = this.currentBookData;
         // console.log("this.currentBookData........", this.currentBookData)
         this.state = {
             //显示de汉字
             currentWord: '',
             //当前汉字的数组
             currentWords: lesson[wordId].words,
+            //当前书本的名字
+            currentBookName: name,
+            //当前课程的名字
             currentLessonName: lesson[wordId].name,
+            //课程封面图
+            currentCoverImg: courseBanner,
         }
     }
 
@@ -37,6 +41,7 @@ export default class WordList extends Component {
     handleClickWord = (word) => {
         // console.log("word....", word)
         let {book_data: {lesson}} = this.currentBookData;
+
         let {wordId} = this.props.params;
         let tmpWords = lesson[wordId].words;
         // console.log("tmpWords.....", tmpWords)
@@ -52,17 +57,21 @@ export default class WordList extends Component {
     }
 
     render() {
-        let {currentWord, currentWords, currentLessonName} = this.state;
+        let {currentWord, currentWords, currentBookName, currentLessonName, currentCoverImg} = this.state;
         //分别为书本的索引和课时的索引
-        let {presspinyin, bookId,} = this.props.params;
         return (
             <div className="TextBoxArea">
                 <Helmet>
+                    <meta name="gankao_sharable" content="1"/>
+                    <meta name="wx_share_title" content={currentBookName}/>
+                    <meta name="wx_share_content" content={currentLessonName}/>
+                    <meta name="wx_share_link" content={window.location.href}/>
+                    <meta name="wx_share_imgurl" content={currentCoverImg}/>
                     <title>
-                        {currentLessonName}
+                        {currentBookName}
                     </title>
                 </Helmet>
-                {!currentWord &&
+                {/* {!currentWord &&
                 <Link to={`/press/${presspinyin}/book/${bookId}`}>
                     <div className="go_back">
                         <span
@@ -72,7 +81,24 @@ export default class WordList extends Component {
                         返回目录
                     </div>
                 </Link>
+                }*/}
+                {/*书的封面start*/}
+                {!currentWord &&
+                <div className="bookCover">
+                    <div className="leftCoverImg">
+                        <img
+                            style={{height: "170px", border: "1px solid rgb(251, 245, 245)"}}
+                            src={currentCoverImg}
+                            alt=""/>
+                    </div>
+                    <div className="lesson_name_gk">
+                        {currentLessonName}
+                    </div>
+                </div>
                 }
+                <div style={{height: "10px", backgroundColor: "rgb(248, 248, 248)"}}>
+                </div>
+                {/*书的封面end*/}
                 {currentWord &&
                 <BishunPlayer
                     key={'bishunplayer_' + this.state.currentWord}
@@ -80,6 +106,7 @@ export default class WordList extends Component {
                     word={currentWord}
                 />
                 }
+                {/*灰色线条start*/}
                 {currentWord &&
                 <div style={{
                     height: "1px",
@@ -92,7 +119,8 @@ export default class WordList extends Component {
                     boxShadow: "0 2px 4px #E5E5E5"
                 }}>
                 </div>}
-                <div className="WordList" style={{top: currentWord ? "345px" : "40px"}}>
+                {/*灰色线条end*/}
+                <div className="WordList" style={{top: currentWord ? "345px" : "215px"}}>
                     {currentWords && currentWords.map((item, index) => {
                         return <div
                             onClick={() => {

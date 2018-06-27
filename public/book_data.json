@@ -9,12 +9,12 @@
         "book_data": {
           "courseName": "《帮你学语文》一年级上册",
           "courseDesc": "本书是以最新教学大纲和教材为依据而编写，主要栏目有：趣解字词、全文讲解、课后精练、知识拓展、单元知识总结。",
-          "courseBanner": "https://img.gankao.com/market/indexImg/1528428365599.JPG",
+          "courseBanner": "https://img.gankao.com/market/indexImg/1529652778802.JPG",
           "lessonIcon": "https://img.gankao.com/market/indexImg/1527057320138.PNG",
           "textBackImg": "https://img.gankao.com/market/indexImg/1527057138792.PNG",
           "lesson": [
             {
-              "name": "天地人",
+              "name": "识字 1.天地人",
               "words": [
                 {
                   "isReaded": false,
@@ -43,7 +43,7 @@
               ]
             },
             {
-              "name": "金木水火土",
+              "name": "识字 2.金木水火土",
               "words": [
                 {
                   "isReaded": false,
@@ -64,7 +64,7 @@
               ]
             },
             {
-              "name": "口耳目",
+              "name": "识字 3.口耳目",
               "words": [
                 {
                   "isReaded": false,
@@ -85,7 +85,7 @@
               ]
             },
             {
-              "name": "日月水火",
+              "name": "识字 4.日月水火",
               "words": [
                 {
                   "isReaded": false,
@@ -106,7 +106,7 @@
               ]
             },
             {
-              "name": "对韵歌",
+              "name": "识字 5.对韵歌",
               "words": [
                 {
                   "isReaded": false,
@@ -344,7 +344,7 @@
               ]
             },
             {
-              "name": "秋天",
+              "name": "1.秋天",
               "words": [
                 {
                   "isReaded": false,
@@ -365,7 +365,7 @@
               ]
             },
             {
-              "name": "小小的船",
+              "name": "2.小小的船",
               "words": [
                 {
                   "isReaded": false,
@@ -386,7 +386,7 @@
               ]
             },
             {
-              "name": "江南",
+              "name": "3.江南",
               "words": [
                 {
                   "isReaded": false,
@@ -403,7 +403,7 @@
               ]
             },
             {
-              "name": "四季",
+              "name": "4.四季",
               "words": [
                 {
                   "isReaded": false,
@@ -475,23 +475,6 @@
                 {
                   "isReaded": false,
                   "word": "鸟"
-                }
-              ]
-            },
-            {
-              "name": "对韵歌",
-              "words": [
-                {
-                  "isReaded": false,
-                  "word": "虫"
-                },
-                {
-                  "isReaded": false,
-                  "word": "云"
-                },
-                {
-                  "isReaded": false,
-                  "word": "山"
                 }
               ]
             },
@@ -592,7 +575,7 @@
               ]
             },
             {
-              "name": "影子",
+              "name": "5.影子",
               "words": [
                 {
                   "isReaded": false,
@@ -613,7 +596,7 @@
               ]
             },
             {
-              "name": "比尾巴",
+              "name": "6.比尾巴",
               "words": [
                 {
                   "isReaded": false,
@@ -634,7 +617,7 @@
               ]
             },
             {
-              "name": "青蛙写诗",
+              "name": "7.青蛙写诗",
               "words": [
                 {
                   "isReaded": false,
@@ -655,7 +638,7 @@
               ]
             },
             {
-              "name": "雨点儿",
+              "name": "8.雨点儿",
               "words": [
                 {
                   "isReaded": false,
@@ -680,7 +663,7 @@
               ]
             },
             {
-              "name": "明天要远足",
+              "name": "9.明天要远足",
               "words": [
                 {
                   "isReaded": false,
@@ -701,7 +684,7 @@
               ]
             },
             {
-              "name": "大还是小",
+              "name": "10.大还是小",
               "words": [
                 {
                   "isReaded": false,
@@ -718,7 +701,7 @@
               ]
             },
             {
-              "name": "项链",
+              "name": "11.项链",
               "words": [
                 {
                   "isReaded": false,
@@ -764,7 +747,7 @@
               ]
             },
             {
-              "name": "雪地里的小画家",
+              "name": "12.雪地里的小画家",
               "words": [
                 {
                   "isReaded": false,
@@ -789,7 +772,7 @@
               ]
             },
             {
-              "name": "乌鸦喝水",
+              "name": "13.乌鸦喝水",
               "words": [
                 {
                   "isReaded": false,
@@ -814,7 +797,7 @@
               ]
             },
             {
-              "name": "小蜗牛",
+              "name": "14.小蜗牛",
               "words": [
                 {
                   "isReaded": false,
@@ -856,12 +839,12 @@
         "book_data": {
           "courseName": "《帮你学语文》 二年级上册",
           "courseDesc": "本书是以最新教学大纲和教材为依据而编写，主要栏目有：趣解字词、全文讲解、课后精练、知识拓展、单元知识总结。",
-          "courseBanner": "https://img.gankao.com/market/indexImg/1528342461094.JPG",
+          "courseBanner": "https://img.gankao.com/market/indexImg/1529652809188.JPG",
           "lessonIcon": "https://img.gankao.com/market/indexImg/1527057320138.PNG",
           "textBackImg": "https://img.gankao.com/market/indexImg/1527057138792.PNG",
           "lesson": [
             {
-              "name": "小蝌蚪找妈妈",
+              "name": "1.小蝌蚪找妈妈",
               "words": [
                 {
                   "isReaded": false,
@@ -906,7 +889,7 @@
               ]
             },
             {
-              "name": "我是什么",
+              "name": "2.我是什么",
               "words": [
                 {
                   "isReaded": false,
@@ -951,7 +934,7 @@
               ]
             },
             {
-              "name": "植物妈妈有办法",
+              "name": "3.植物妈妈有办法",
               "words": [
                 {
                   "isReaded": false,
@@ -1045,7 +1028,7 @@
               ]
             },
             {
-              "name": "场景歌",
+              "name": "识字 1.场景歌",
               "words": [
                 {
                   "isReaded": false,
@@ -1090,7 +1073,7 @@
               ]
             },
             {
-              "name": "树之歌",
+              "name": "识字 2.树之歌",
               "words": [
                 {
                   "isReaded": false,
@@ -1135,7 +1118,7 @@
               ]
             },
             {
-              "name": "拍手歌",
+              "name": "识字 3.拍手歌",
               "words": [
                 {
                   "isReaded": false,
@@ -1180,7 +1163,7 @@
               ]
             },
             {
-              "name": "田家四季歌",
+              "name": "识字 4.田家四季歌",
               "words": [
                 {
                   "isReaded": false,
@@ -1258,7 +1241,7 @@
               ]
             },
             {
-              "name": "曹冲称象",
+              "name": "4.曹冲称象",
               "words": [
                 {
                   "isReaded": false,
@@ -1303,7 +1286,7 @@
               ]
             },
             {
-              "name": "玲玲的画",
+              "name": "5.玲玲的画",
               "words": [
                 {
                   "isReaded": false,
@@ -1348,7 +1331,7 @@
               ]
             },
             {
-              "name": "一封信",
+              "name": "6.一封信",
               "words": [
                 {
                   "isReaded": false,
@@ -1393,7 +1376,7 @@
               ]
             },
             {
-              "name": "妈妈睡了",
+              "name": "7.妈妈睡了",
               "words": [
                 {
                   "isReaded": false,
@@ -1479,7 +1462,7 @@
               ]
             },
             {
-              "name": "古诗二首",
+              "name": "8.古诗二首",
               "words": [
                 {
                   "isReaded": false,
@@ -1524,7 +1507,7 @@
               ]
             },
             {
-              "name": "黄山奇石",
+              "name": "9.黄山奇石",
               "words": [
                 {
                   "isReaded": false,
@@ -1565,7 +1548,7 @@
               ]
             },
             {
-              "name": "日月潭",
+              "name": "10.日月潭",
               "words": [
                 {
                   "isReaded": false,
@@ -1606,7 +1589,7 @@
               ]
             },
             {
-              "name": "葡萄沟",
+              "name": "11.葡萄沟",
               "words": [
                 {
                   "isReaded": false,
@@ -1688,7 +1671,7 @@
               ]
             },
             {
-              "name": "坐井观天",
+              "name": "12.坐井观天",
               "words": [
                 {
                   "isReaded": false,
@@ -1725,7 +1708,7 @@
               ]
             },
             {
-              "name": "寒号鸟",
+              "name": "13.寒号鸟",
               "words": [
                 {
                   "isReaded": false,
@@ -1762,7 +1745,7 @@
               ]
             },
             {
-              "name": "我要的是葫芦",
+              "name": "14.我要的是葫芦",
               "words": [
                 {
                   "isReaded": false,
@@ -1840,7 +1823,7 @@
               ]
             },
             {
-              "name": "大禹治水",
+              "name": "15.大禹治水",
               "words": [
                 {
                   "isReaded": false,
@@ -1877,7 +1860,7 @@
               ]
             },
             {
-              "name": "朱德的扁担",
+              "name": "16.朱德的扁担",
               "words": [
                 {
                   "isReaded": false,
@@ -1910,19 +1893,11 @@
                 {
                   "isReaded": false,
                   "word": "士"
-                },
-                {
-                  "isReaded": false,
-                  "word": "领"
-                },
-                {
-                  "isReaded": false,
-                  "word": "巾"
                 }
               ]
             },
             {
-              "name": "难忘的泼水节",
+              "name": "17.难忘的泼水节",
               "words": [
                 {
                   "isReaded": false,
@@ -2008,7 +1983,7 @@
               ]
             },
             {
-              "name": "古诗二首",
+              "name": "18.古诗二首",
               "words": [
                 {
                   "isReaded": false,
@@ -2045,52 +2020,7 @@
               ]
             },
             {
-              "name": "场景歌",
-              "words": [
-                {
-                  "isReaded": false,
-                  "word": "园"
-                },
-                {
-                  "isReaded": false,
-                  "word": "孔"
-                },
-                {
-                  "isReaded": false,
-                  "word": "桥"
-                },
-                {
-                  "isReaded": false,
-                  "word": "群"
-                },
-                {
-                  "isReaded": false,
-                  "word": "队"
-                },
-                {
-                  "isReaded": false,
-                  "word": "旗"
-                },
-                {
-                  "isReaded": false,
-                  "word": "铜"
-                },
-                {
-                  "isReaded": false,
-                  "word": "号"
-                },
-                {
-                  "isReaded": false,
-                  "word": "领"
-                },
-                {
-                  "isReaded": false,
-                  "word": "巾"
-                }
-              ]
-            },
-            {
-              "name": "雾在哪里",
+              "name": "19.雾在哪里",
               "words": [
                 {
                   "isReaded": false,
@@ -2127,7 +2057,7 @@
               ]
             },
             {
-              "name": "雪孩子",
+              "name": "20.雪孩子",
               "words": [
                 {
                   "isReaded": false,
@@ -2201,7 +2131,7 @@
               ]
             },
             {
-              "name": "狐假虎威",
+              "name": "21.狐假虎威",
               "words": [
                 {
                   "isReaded": false,
@@ -2238,7 +2168,7 @@
               ]
             },
             {
-              "name": "狐狸分奶酪",
+              "name": "22.狐狸分奶酪",
               "words": [
                 {
                   "isReaded": false,
@@ -2275,7 +2205,7 @@
               ]
             },
             {
-              "name": "纸船和风筝",
+              "name": "23.纸船和风筝",
               "words": [
                 {
                   "isReaded": false,
@@ -2312,7 +2242,7 @@
               ]
             },
             {
-              "name": "风娃娃",
+              "name": "24.风娃娃",
               "words": [
                 {
                   "isReaded": false,
@@ -2397,9 +2327,5 @@
         }
       }
     ]
-  },
-  {
-    "presspinyin": "gankao",
-    "pressname": "赶考状元"
   }
 ]

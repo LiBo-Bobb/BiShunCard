@@ -1,7 +1,6 @@
 .bookListBox {
     max-width: 768px;
     margin: 0 auto;
-    /*border: 1px solid red;*/
 }
 
 .bookListGk {
@@ -13,22 +12,23 @@
     padding: 15px;
     overflow: hidden;
     display: flex;
-    /*justify-content: space-around;*/
     align-items: center;
+    position: relative;
 
 }
-
 .bookListGk .bookItem .bookImg {
     height: 130px;
 
 }
 
 .bookListGk .bookItem .bookInfo {
-    margin-right: 120px;
 
 
 }
 
 .bookListGk .bookItem .clickIcon {
     color: #969696;
+    position: absolute;
+    top: 65px;
+    right: 5%;
 }

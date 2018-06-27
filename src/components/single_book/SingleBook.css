@@ -1,31 +1,26 @@
 .App {
     padding: 0;
-    background: #f9f9f9;
+    /*background: #f9f9f9;*/
     max-width: 768px;
     margin: 0 auto;
-    /*height: 600px;*/
 }
 
 .App .courseTitleArea {
     background: white;
-    display: flex;
-    overflow: hidden;
-    padding: 25px;
+    /*margin: 10px 15px;*/
 }
 
 .leftCourseImg {
-    /*border: 1px solid red;*/
     float: left;
-    margin-right: 20px;
+    margin-right: 2%;
 }
 
 .rightTextDesc {
-    /*border: 1px solid red;*/
     float: left;
+    width: 60%;
 }
 
 .catalogList {
-    /*margin-top: 10px;*/
     padding-left: 20px;
     background-color: white;
     max-width: 768px;
@@ -34,9 +29,10 @@
     position: fixed;
     right: 0;
     left: 0;
-    /*top: 250px;*/
-    top: 215px;
+    /*top: 190px;*/
+    top: 180px;
     bottom: 0;
+    -webkit-overflow-scrolling:touch;
 }
 
 .catalogList .catalogItem {

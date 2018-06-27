@@ -3,7 +3,6 @@ import {Link} from 'react-router';
 import {filter} from 'lodash';
 import './BookList.css'
 import {Helmet} from 'react-helmet';
-import {flatten} from 'lodash';
 
 export default class WordList extends Component {
     constructor(props) {
