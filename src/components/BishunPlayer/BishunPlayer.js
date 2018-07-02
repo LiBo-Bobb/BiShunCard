@@ -55,8 +55,6 @@ export default class BishunPlayer extends Component {
         // console.log('BiShunPlayer卸载.....')
         this.setState({isShowBishun: false})
     }
-
-
     //获取笔画动画的数据...
 
     getBiShunData = (text) => {
@@ -176,7 +174,7 @@ export default class BishunPlayer extends Component {
                     ? <div style={{textAlign: "center", margin: "20px auto", paddingBottom: "20px"}}>
                         {(isShowBishun)
                             ? <BiShunCanvas
-                                splitDelay={2000}
+                                splitDelay={1000}
                                 splitCallback={this.loop}
                                 fillColor={'#417BEE'}
                                 crossColor={'#417BEE'}
