@@ -9,7 +9,7 @@ import PressList from './components/press_list/PressList'
 import './index.css';
 import fetch from "isomorphic-fetch";
 // `//bishunfile.gankao.com/book_data.json?v=${Math.random()}`
-fetch(`./book_data.json`, {
+fetch(`//bishunfile.gankao.com/book_data.json?v=${Math.random()}`, {
     method: 'GET'
 }).then(
     function (response) {
@@ -26,6 +26,7 @@ fetch(`./book_data.json`, {
                             <Route path="/press/:presspinyin/book/:bookId/word/:wordId" components={WordList}/>
                         </Route>
                     </Route>
+
                 </Route>
             </Router>
             ReactDOM.render(
