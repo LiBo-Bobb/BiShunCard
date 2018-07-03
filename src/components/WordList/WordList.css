@@ -17,6 +17,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /*background: #ECECEC;*/
+    margin: 0 auto;
+    width: 64%;
+    flex-wrap: wrap;
 
 }
 

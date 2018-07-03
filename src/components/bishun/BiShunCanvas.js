@@ -23,6 +23,7 @@ import React from 'react';
 export default class BiShunCanvas extends React.Component {
     constructor(props) {
         super(props)
+        // console.log("props.....",props)
         const {id = 0, mode = 'custom', drawDelay = 100, splitDelay = 500, loopDelay = 800} = props
         this.state = {
             id: `BSCanvas${id}`,
@@ -48,6 +49,11 @@ export default class BiShunCanvas extends React.Component {
     //销毁组件
     componentWillUnmount() {
         this.unMounted = true
+    }
+
+    componentWillReceiveProps(nextProps){
+        // console.log("nextProps.........",nextProps)
+
     }
 
     drawContainer = (ctx) => {

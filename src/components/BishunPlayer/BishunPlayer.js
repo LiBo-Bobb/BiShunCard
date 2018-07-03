@@ -3,6 +3,7 @@ import fetch from "isomorphic-fetch";
 import PinyinSpeaker from '../PinyinSpeaker/PinyinSpeaker';
 import BiShunCanvas from '../bishun/BiShunCanvas';
 import BuShouSpeaker from '../BuShouSpeaker/BuShouSpeaker'
+import './bishunPlayer.css'
 
 export default class BishunPlayer extends Component {
 
@@ -30,6 +31,9 @@ export default class BishunPlayer extends Component {
             ifLast: false,
             //当前浏览器是否支持canvas  默认支持
             isSupportCanvas: true,
+            //偏旁播放速度 默认1000毫秒
+            bushouSpeed: 1000,
+
 
         }
     };
@@ -55,6 +59,7 @@ export default class BishunPlayer extends Component {
         // console.log('BiShunPlayer卸载.....')
         this.setState({isShowBishun: false})
     }
+
     //获取笔画动画的数据...
 
     getBiShunData = (text) => {
@@ -134,9 +139,28 @@ export default class BishunPlayer extends Component {
         let {onBishunPlayerClosed} = this.props
         onBishunPlayerClosed()
     }
+    controlSpeed = (speed) => {
+        console.log("speed.....", speed)
+        let speedTemplate = ["fast", "normal", "slow"];
+        let obj = {}
+        switch (speed) {
+            case "fast":
+                obj.bushouSpeed = 1000;
+                break;
+            case "normal":
+                obj.bushouSpeed = 1500;
+                break;
+            default:
+                obj.bushouSpeed = 2000;
+        }
+        console.log("obj.....", obj)
+        this.setState({obj})
+        //
+
+    }
 
     render() {
-        let {pinyin, textData, bishun, isShowBishun, isSupportCanvas, controlIndex, audioSrc, ifLast} = this.state;
+        let {pinyin, textData, bishun, isShowBishun, isSupportCanvas, controlIndex, audioSrc, ifLast, bushouSpeed} = this.state;
         let arrBiShun = bishun.split(",");
         let {word} = this.props
         // console.log("word.....", word)
@@ -171,7 +195,13 @@ export default class BishunPlayer extends Component {
             }
             {
                 isSupportCanvas
-                    ? <div style={{textAlign: "center", margin: "20px auto", paddingBottom: "20px"}}>
+                    ? <div
+                        style={{
+                            textAlign: "center",
+                            margin: pinyin.length > 3 ? "0 auto" : "20px auto",
+                            paddingBottom: "20px",
+                            position: "relative"
+                        }}>
                         {(isShowBishun)
                             ? <BiShunCanvas
                                 splitDelay={1000}
@@ -188,7 +218,14 @@ export default class BishunPlayer extends Component {
                         <div style={{height: '200px', lineHeight: "200px"}}>正在加载中...</div>
                         }
                         {/*偏旁部首start*/}
-                        <div style={{marginTop: "15px", display: "flex", justifyContent: "center"}}>
+                        <div style={{
+                            marginTop: "15px",
+                            display: "flex",
+                            justifyContent: "center",
+                            flexWrap: "wrap",
+                            width: "65%",
+                            margin: "0 auto"
+                        }}>
                             {(arrBiShun.length > 0)
                                 ? arrBiShun.map((item, index) => {
                                     let condition = controlIndex === index;
@@ -207,6 +244,28 @@ export default class BishunPlayer extends Component {
                             }
                         </div>
                         {/*偏旁部首end*/}
+                        {/*偏旁速度控制start*/}
+                        <div className="controlSpeed">
+                            <div className="speedBtn"
+                                 onClick={() => {
+                                     this.controlSpeed("fast");
+                                 }}>
+                                快
+                            </div>
+                            <div className="speedBtn"
+                                 onClick={() => {
+                                     this.controlSpeed("normal");
+                                 }}>
+                                中
+                            </div>
+                            <div className="speedBtn"
+                                 onClick={() => {
+                                     this.controlSpeed("slow");
+                                 }}>
+                                慢
+                            </div>
+                        </div>
+                        {/*偏旁速度控制end*/}
                     </div>
                     : <div style={{width: "200px", margin: "40px auto"}}>
                         {/*如果浏览器不兼容canvas，就使用jif*/}
@@ -214,15 +273,7 @@ export default class BishunPlayer extends Component {
                              src={jif} alt=""/>
                     </div>
             }
-            {/*
-            {!isSupportCanvas&&<div style={{width: "200px", margin: "40px auto"}}>
-                如果浏览器不兼容canvas，就使用jif
-                <img style={{width: "100%"}}
-                     src={jif} alt=""/>
-            </div>}*/
-            }
-            {/*笔顺动画组件end*/
-            }
+
         </div>)
             ;
     }

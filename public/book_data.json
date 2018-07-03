@@ -2325,6 +2325,1146 @@
             }
           ]
         }
+      },
+      {
+        "id": 2,
+        "name": "《帮你学语文》 三年级上册",
+        "book_data": {
+          "courseName": "《帮你学语文》 三年级上册",
+          "courseDesc": "本书是以最新教学大纲和教材为依据而编写，主要栏目有：趣解字词、全文讲解、课后精练、知识拓展、单元知识总结。",
+          "courseBanner": "https://img.gankao.com/market/indexImg/1530601762663.JPG",
+          "lessonIcon": "https://img.gankao.com/market/indexImg/1527057320138.PNG",
+          "textBackImg": "https://img.gankao.com/market/indexImg/1527057138792.PNG",
+          "lesson": [
+            {
+              "name": "1.大青树下的小学",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "晨"
+                },
+                {
+                  "isReaded": false,
+                  "word": "绒"
+                },
+                {
+                  "isReaded": false,
+                  "word": "球"
+                },
+                {
+                  "isReaded": false,
+                  "word": "汗"
+                },
+                {
+                  "isReaded": false,
+                  "word": "艳"
+                },
+                {
+                  "isReaded": false,
+                  "word": "服"
+                },
+                {
+                  "isReaded": false,
+                  "word": "装"
+                },
+                {
+                  "isReaded": false,
+                  "word": "扮"
+                },
+                {
+                  "isReaded": false,
+                  "word": "读"
+                },
+                {
+                  "isReaded": false,
+                  "word": "静"
+                },
+                {
+                  "isReaded": false,
+                  "word": "停"
+                },
+                {
+                  "isReaded": false,
+                  "word": "粗"
+                },
+                {
+                  "isReaded": false,
+                  "word": "影"
+                }
+              ]
+            },
+            {
+              "name": "2.花的学校",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "落"
+                },
+                {
+                  "isReaded": false,
+                  "word": "荒"
+                },
+                {
+                  "isReaded": false,
+                  "word": "笛"
+                },
+                {
+                  "isReaded": false,
+                  "word": "舞"
+                },
+                {
+                  "isReaded": false,
+                  "word": "狂"
+                },
+                {
+                  "isReaded": false,
+                  "word": "罚"
+                },
+                {
+                  "isReaded": false,
+                  "word": "假"
+                },
+                {
+                  "isReaded": false,
+                  "word": "互"
+                },
+                {
+                  "isReaded": false,
+                  "word": "所"
+                },
+                {
+                  "isReaded": false,
+                  "word": "够"
+                },
+                {
+                  "isReaded": false,
+                  "word": "猜"
+                },
+                {
+                  "isReaded": false,
+                  "word": "扬"
+                },
+                {
+                  "isReaded": false,
+                  "word": "臂"
+                }
+              ]
+            },
+            {
+              "name": "3.不懂就要问",
+              "words": [
+              ]
+            },
+            {
+              "name": "4.古诗三首",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "寒"
+                },
+                {
+                  "isReaded": false,
+                  "word": "径"
+                },
+                {
+                  "isReaded": false,
+                  "word": "斜"
+                },
+                {
+                  "isReaded": false,
+                  "word": "霜"
+                },
+                {
+                  "isReaded": false,
+                  "word": "赠"
+                },
+                {
+                  "isReaded": false,
+                  "word": "刘"
+                },
+                {
+                  "isReaded": false,
+                  "word": "盖"
+                },
+                {
+                  "isReaded": false,
+                  "word": "菊"
+                },
+                {
+                  "isReaded": false,
+                  "word": "残"
+                },
+                {
+                  "isReaded": false,
+                  "word": "君"
+                },
+                {
+                  "isReaded": false,
+                  "word": "橙"
+                },
+                {
+                  "isReaded": false,
+                  "word": "送"
+                },
+                {
+                  "isReaded": false,
+                  "word": "挑"
+                }
+              ]
+            },
+            {
+              "name": "5.铺满金色巴掌的水泥道",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "铺"
+                },
+                {
+                  "isReaded": false,
+                  "word": "泥"
+                },
+                {
+                  "isReaded": false,
+                  "word": "晶"
+                },
+                {
+                  "isReaded": false,
+                  "word": "紧"
+                },
+                {
+                  "isReaded": false,
+                  "word": "院"
+                },
+                {
+                  "isReaded": false,
+                  "word": "印"
+                },
+                {
+                  "isReaded": false,
+                  "word": "排"
+                },
+                {
+                  "isReaded": false,
+                  "word": "列"
+                },
+                {
+                  "isReaded": false,
+                  "word": "规"
+                },
+                {
+                  "isReaded": false,
+                  "word": "则"
+                },
+                {
+                  "isReaded": false,
+                  "word": "乱"
+                },
+                {
+                  "isReaded": false,
+                  "word": "棕"
+                },
+                {
+                  "isReaded": false,
+                  "word": "迟"
+                }
+              ]
+            },
+            {
+              "name": "6.秋天的雨",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "盒"
+                },
+                {
+                  "isReaded": false,
+                  "word": "颜"
+                },
+                {
+                  "isReaded": false,
+                  "word": "料"
+                },
+                {
+                  "isReaded": false,
+                  "word": "票"
+                },
+                {
+                  "isReaded": false,
+                  "word": "飘"
+                },
+                {
+                  "isReaded": false,
+                  "word": "争"
+                },
+                {
+                  "isReaded": false,
+                  "word": "仙"
+                },
+                {
+                  "isReaded": false,
+                  "word": "淡"
+                },
+                {
+                  "isReaded": false,
+                  "word": "闻"
+                },
+                {
+                  "isReaded": false,
+                  "word": "梨"
+                },
+                {
+                  "isReaded": false,
+                  "word": "勾"
+                },
+                {
+                  "isReaded": false,
+                  "word": "曲"
+                },
+                {
+                  "isReaded": false,
+                  "word": "丰"
+                }
+              ]
+            },
+            {
+              "name": "7.听听，秋的声音",
+              "words": [
+              ]
+            },
+            {
+              "name": "8.去年的树",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "冷"
+                },
+                {
+                  "isReaded": false,
+                  "word": "离"
+                },
+                {
+                  "isReaded": false,
+                  "word": "等"
+                },
+                {
+                  "isReaded": false,
+                  "word": "剩"
+                },
+                {
+                  "isReaded": false,
+                  "word": "砍"
+                },
+                {
+                  "isReaded": false,
+                  "word": "谷"
+                },
+                {
+                  "isReaded": false,
+                  "word": "柴"
+                },
+                {
+                  "isReaded": false,
+                  "word": "煤"
+                },
+                {
+                  "isReaded": false,
+                  "word": "油"
+                },
+                {
+                  "isReaded": false,
+                  "word": "诉"
+                },
+                {
+                  "isReaded": false,
+                  "word": "睁"
+                },
+                {
+                  "isReaded": false,
+                  "word": "接"
+                }
+              ]
+            },
+            {
+              "name": "9.那一定会很好",
+              "words": [
+              ]
+            },
+            {
+              "name": "10.在牛肚子里旅行",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "旅"
+                },
+                {
+                  "isReaded": false,
+                  "word": "咱"
+                },
+                {
+                  "isReaded": false,
+                  "word": "怜"
+                },
+                {
+                  "isReaded": false,
+                  "word": "救"
+                },
+                {
+                  "isReaded": false,
+                  "word": "命"
+                },
+                {
+                  "isReaded": false,
+                  "word": "拼"
+                },
+                {
+                  "isReaded": false,
+                  "word": "扫"
+                },
+                {
+                  "isReaded": false,
+                  "word": "胃"
+                },
+                {
+                  "isReaded": false,
+                  "word": "管"
+                },
+                {
+                  "isReaded": false,
+                  "word": "刚"
+                },
+                {
+                  "isReaded": false,
+                  "word": "流"
+                },
+                {
+                  "isReaded": false,
+                  "word": "泪"
+                },
+                {
+                  "isReaded": false,
+                  "word": "算"
+                }
+              ]
+            },
+            {
+              "name": "11.一块奶酪",
+              "words": [
+              ]
+            },
+            {
+              "name": "12.总也倒不了的老屋",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "洞"
+                },
+                {
+                  "isReaded": false,
+                  "word": "准"
+                },
+                {
+                  "isReaded": false,
+                  "word": "备"
+                },
+                {
+                  "isReaded": false,
+                  "word": "暴"
+                },
+                {
+                  "isReaded": false,
+                  "word": "墙"
+                },
+                {
+                  "isReaded": false,
+                  "word": "壁"
+                },
+                {
+                  "isReaded": false,
+                  "word": "饿"
+                },
+                {
+                  "isReaded": false,
+                  "word": "蜘"
+                },
+                {
+                  "isReaded": false,
+                  "word": "漂"
+                },
+                {
+                  "isReaded": false,
+                  "word": "撞"
+                },
+                {
+                  "isReaded": false,
+                  "word": "饱"
+                },
+                {
+                  "isReaded": false,
+                  "word": "晒"
+                }
+              ]
+            },
+            {
+              "name": "13.胡萝卜先生的长胡子",
+              "words": [
+              ]
+            },
+            {
+              "name": "14.不会叫的狗",
+              "words": [
+              ]
+            },
+            {
+              "name": "15.搭船的鸟",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "搭"
+                },
+                {
+                  "isReaded": false,
+                  "word": "亲"
+                },
+                {
+                  "isReaded": false,
+                  "word": "父"
+                },
+                {
+                  "isReaded": false,
+                  "word": "沙"
+                },
+                {
+                  "isReaded": false,
+                  "word": "啦"
+                },
+                {
+                  "isReaded": false,
+                  "word": "响"
+                },
+                {
+                  "isReaded": false,
+                  "word": "羽"
+                },
+                {
+                  "isReaded": false,
+                  "word": "翠"
+                },
+                {
+                  "isReaded": false,
+                  "word": "嘴"
+                },
+                {
+                  "isReaded": false,
+                  "word": "悄"
+                },
+                {
+                  "isReaded": false,
+                  "word": "吞"
+                },
+                {
+                  "isReaded": false,
+                  "word": "哦"
+                },
+                {
+                  "isReaded": false,
+                  "word": "捕"
+                }
+              ]
+            },
+            {
+              "name": "16.金色的草地",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "蒲"
+                },
+                {
+                  "isReaded": false,
+                  "word": "英"
+                },
+                {
+                  "isReaded": false,
+                  "word": "盛"
+                },
+                {
+                  "isReaded": false,
+                  "word": "耍"
+                },
+                {
+                  "isReaded": false,
+                  "word": "喊"
+                },
+                {
+                  "isReaded": false,
+                  "word": "欠"
+                },
+                {
+                  "isReaded": false,
+                  "word": "钓"
+                },
+                {
+                  "isReaded": false,
+                  "word": "而"
+                },
+                {
+                  "isReaded": false,
+                  "word": "察"
+                },
+                {
+                  "isReaded": false,
+                  "word": "拢"
+                },
+                {
+                  "isReaded": false,
+                  "word": "趣"
+                },
+                {
+                  "isReaded": false,
+                  "word": "喜"
+                },
+                {
+                  "isReaded": false,
+                  "word": "睡"
+                }
+              ]
+            },
+            {
+              "name": "17.古诗三首",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "断"
+                },
+                {
+                  "isReaded": false,
+                  "word": "楚"
+                },
+                {
+                  "isReaded": false,
+                  "word": "至"
+                },
+                {
+                  "isReaded": false,
+                  "word": "孤"
+                },
+                {
+                  "isReaded": false,
+                  "word": "帆"
+                },
+                {
+                  "isReaded": false,
+                  "word": "饮"
+                },
+                {
+                  "isReaded": false,
+                  "word": "初"
+                },
+                {
+                  "isReaded": false,
+                  "word": "镜"
+                },
+                {
+                  "isReaded": false,
+                  "word": "未"
+                },
+                {
+                  "isReaded": false,
+                  "word": "磨"
+                },
+                {
+                  "isReaded": false,
+                  "word": "遥"
+                },
+                {
+                  "isReaded": false,
+                  "word": "银"
+                },
+                {
+                  "isReaded": false,
+                  "word": "盘"
+                }
+              ]
+            },
+            {
+              "name": "18.富饶的西沙群岛",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "富"
+                },
+                {
+                  "isReaded": false,
+                  "word": "优"
+                },
+                {
+                  "isReaded": false,
+                  "word": "浅"
+                },
+                {
+                  "isReaded": false,
+                  "word": "错"
+                },
+                {
+                  "isReaded": false,
+                  "word": "岩"
+                },
+                {
+                  "isReaded": false,
+                  "word": "虾"
+                },
+                {
+                  "isReaded": false,
+                  "word": "挺"
+                },
+                {
+                  "isReaded": false,
+                  "word": "鼓"
+                },
+                {
+                  "isReaded": false,
+                  "word": "数"
+                },
+                {
+                  "isReaded": false,
+                  "word": "厚"
+                },
+                {
+                  "isReaded": false,
+                  "word": "宝"
+                },
+                {
+                  "isReaded": false,
+                  "word": "贵"
+                }
+              ]
+            },
+            {
+              "name": "19.海滨小城",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "滨"
+                },
+                {
+                  "isReaded": false,
+                  "word": "灰"
+                },
+                {
+                  "isReaded": false,
+                  "word": "渔"
+                },
+                {
+                  "isReaded": false,
+                  "word": "遍"
+                },
+                {
+                  "isReaded": false,
+                  "word": "躺"
+                },
+                {
+                  "isReaded": false,
+                  "word": "载"
+                },
+                {
+                  "isReaded": false,
+                  "word": "靠"
+                },
+                {
+                  "isReaded": false,
+                  "word": "栽"
+                },
+                {
+                  "isReaded": false,
+                  "word": "亚"
+                },
+                {
+                  "isReaded": false,
+                  "word": "夏"
+                },
+                {
+                  "isReaded": false,
+                  "word": "除"
+                },
+                {
+                  "isReaded": false,
+                  "word": "踩"
+                },
+                {
+                  "isReaded": false,
+                  "word": "洁"
+                }
+              ]
+            },
+            {
+              "name": "20.美丽的小兴安岭",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "脑"
+                },
+                {
+                  "isReaded": false,
+                  "word": "袋"
+                },
+                {
+                  "isReaded": false,
+                  "word": "严"
+                },
+                {
+                  "isReaded": false,
+                  "word": "实"
+                },
+                {
+                  "isReaded": false,
+                  "word": "挡"
+                },
+                {
+                  "isReaded": false,
+                  "word": "视"
+                },
+                {
+                  "isReaded": false,
+                  "word": "线"
+                },
+                {
+                  "isReaded": false,
+                  "word": "坛"
+                },
+                {
+                  "isReaded": false,
+                  "word": "显"
+                },
+                {
+                  "isReaded": false,
+                  "word": "材"
+                },
+                {
+                  "isReaded": false,
+                  "word": "软"
+                },
+                {
+                  "isReaded": false,
+                  "word": "刮"
+                },
+                {
+                  "isReaded": false,
+                  "word": "库"
+                }
+              ]
+            },
+            {
+              "name": "21.大自然的声音",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "妙"
+                },
+                {
+                  "isReaded": false,
+                  "word": "演"
+                },
+                {
+                  "isReaded": false,
+                  "word": "奏"
+                },
+                {
+                  "isReaded": false,
+                  "word": "琴"
+                },
+                {
+                  "isReaded": false,
+                  "word": "柔"
+                },
+                {
+                  "isReaded": false,
+                  "word": "感"
+                },
+                {
+                  "isReaded": false,
+                  "word": "受"
+                },
+                {
+                  "isReaded": false,
+                  "word": "激"
+                },
+                {
+                  "isReaded": false,
+                  "word": "击"
+                },
+                {
+                  "isReaded": false,
+                  "word": "器"
+                },
+                {
+                  "isReaded": false,
+                  "word": "滴"
+                },
+                {
+                  "isReaded": false,
+                  "word": "敲"
+                },
+                {
+                  "isReaded": false,
+                  "word": "鸣"
+                }
+              ]
+            },
+            {
+              "name": "22.父亲、树林和鸟",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "朝"
+                },
+                {
+                  "isReaded": false,
+                  "word": "雾"
+                },
+                {
+                  "isReaded": false,
+                  "word": "蒙"
+                },
+                {
+                  "isReaded": false,
+                  "word": "鼻"
+                },
+                {
+                  "isReaded": false,
+                  "word": "总"
+                },
+                {
+                  "isReaded": false,
+                  "word": "抖"
+                },
+                {
+                  "isReaded": false,
+                  "word": "露"
+                },
+                {
+                  "isReaded": false,
+                  "word": "湿"
+                },
+                {
+                  "isReaded": false,
+                  "word": "吸"
+                },
+                {
+                  "isReaded": false,
+                  "word": "猎"
+                },
+                {
+                  "isReaded": false,
+                  "word": "翅"
+                },
+                {
+                  "isReaded": false,
+                  "word": "膀"
+                },
+                {
+                  "isReaded": false,
+                  "word": "重"
+                }
+              ]
+            },
+            {
+              "name": "23.带刺的朋友",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "刺"
+                },
+                {
+                  "isReaded": false,
+                  "word": "枣"
+                },
+                {
+                  "isReaded": false,
+                  "word": "颗"
+                },
+                {
+                  "isReaded": false,
+                  "word": "忽"
+                },
+                {
+                  "isReaded": false,
+                  "word": "乎"
+                },
+                {
+                  "isReaded": false,
+                  "word": "暗"
+                },
+                {
+                  "isReaded": false,
+                  "word": "伸"
+                },
+                {
+                  "isReaded": false,
+                  "word": "匆"
+                },
+                {
+                  "isReaded": false,
+                  "word": "沟"
+                },
+                {
+                  "isReaded": false,
+                  "word": "聪"
+                },
+                {
+                  "isReaded": false,
+                  "word": "偷"
+                },
+                {
+                  "isReaded": false,
+                  "word": "追"
+                },
+                {
+                  "isReaded": false,
+                  "word": "腰"
+                }
+              ]
+            },
+            {
+              "name": "24.司马光",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "司"
+                },
+                {
+                  "isReaded": false,
+                  "word": "庭"
+                },
+                {
+                  "isReaded": false,
+                  "word": "登"
+                },
+                {
+                  "isReaded": false,
+                  "word": "跌"
+                },
+                {
+                  "isReaded": false,
+                  "word": "众"
+                },
+                {
+                  "isReaded": false,
+                  "word": "弃"
+                },
+                {
+                  "isReaded": false,
+                  "word": "持"
+                }
+              ]
+            },
+            {
+              "name": "25.掌声",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "掌"
+                },
+                {
+                  "isReaded": false,
+                  "word": "班"
+                },
+                {
+                  "isReaded": false,
+                  "word": "默"
+                },
+                {
+                  "isReaded": false,
+                  "word": "腿"
+                },
+                {
+                  "isReaded": false,
+                  "word": "轮"
+                },
+                {
+                  "isReaded": false,
+                  "word": "投"
+                },
+                {
+                  "isReaded": false,
+                  "word": "调"
+                },
+                {
+                  "isReaded": false,
+                  "word": "摇"
+                },
+                {
+                  "isReaded": false,
+                  "word": "晃"
+                },
+                {
+                  "isReaded": false,
+                  "word": "烈"
+                },
+                {
+                  "isReaded": false,
+                  "word": "勇"
+                }
+              ]
+            },
+            {
+              "name": "26.灰雀",
+              "words": [
+                {
+                  "isReaded": false,
+                  "word": "雀"
+                },
+                {
+                  "isReaded": false,
+                  "word": "郊"
+                },
+                {
+                  "isReaded": false,
+                  "word": "养"
+                },
+                {
+                  "isReaded": false,
+                  "word": "粉"
+                },
+                {
+                  "isReaded": false,
+                  "word": "粒"
+                },
+                {
+                  "isReaded": false,
+                  "word": "男"
+                },
+                {
+                  "isReaded": false,
+                  "word": "或"
+                },
+                {
+                  "isReaded": false,
+                  "word": "者"
+                },
+                {
+                  "isReaded": false,
+                  "word": "冻"
+                },
+                {
+                  "isReaded": false,
+                  "word": "惜"
+                },
+                {
+                  "isReaded": false,
+                  "word": "肯"
+                },
+                {
+                  "isReaded": false,
+                  "word": "诚"
+                }
+              ]
+            },
+            {
+              "name": "27.手术台就是阵地",
+              "words": [
+              ]
+            }
+          ]
+        }
       }
     ]
   }

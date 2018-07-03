@@ -59,6 +59,7 @@ export default class WordList extends Component {
     render() {
         let {currentWord, currentWords, currentBookName, currentLessonName, currentCoverImg} = this.state;
         //分别为书本的索引和课时的索引
+        // console.log("currentWords.....",currentWords)
         return (
             <div className="TextBoxArea">
                 <Helmet>
@@ -121,7 +122,7 @@ export default class WordList extends Component {
                 </div>}
                 {/*灰色线条end*/}
                 <div className="WordList" style={{top: currentWord ? "345px" : "215px"}}>
-                    {currentWords && currentWords.map((item, index) => {
+                    {currentWords.length>0? currentWords.map((item, index) => {
                         return <div
                             onClick={() => {
                                 this.handleClickWord(item.word.trim())
@@ -140,7 +141,7 @@ export default class WordList extends Component {
                                 {item.word}
                             </div>
                         </div>
-                    })}
+                    }):<div style={{color:"#666",fontSize:"24px",textAlign:"center"}}>本课暂无生字</div>}
                 </div>
             </div>
         )

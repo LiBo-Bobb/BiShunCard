@@ -8,8 +8,8 @@ import BookList from './components/book_list/BookList'
 import PressList from './components/press_list/PressList'
 import './index.css';
 import fetch from "isomorphic-fetch";
-// `//bishunfile.gankao.com/book_data.json?a=${Math.random()}`
-fetch(`//bishunfile.gankao.com/book_data.json?v=${Math.random()}`, {
+// `//bishunfile.gankao.com/book_data.json?v=${Math.random()}`
+fetch(`./book_data.json`, {
     method: 'GET'
 }).then(
     function (response) {

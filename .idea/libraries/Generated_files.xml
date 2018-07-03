@@ -2,31 +2,80 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/dist/build/static/js/main.002890a3.js" />
-        <item url="file://$PROJECT_DIR$/dist/build/static/js/main.05734c47.js" />
-        <item url="file://$PROJECT_DIR$/dist/build/static/js/main.390a640d.js" />
-        <item url="file://$PROJECT_DIR$/dist/build/static/js/main.5666a2be.js" />
-        <item url="file://$PROJECT_DIR$/dist/build/static/js/main.8fe47c95.js" />
-        <item url="file://$PROJECT_DIR$/dist/build/static/js/main.d8d847c0.js" />
-        <item url="file://$PROJECT_DIR$/dist/build/static/js/main.e32ac8a2.js" />
-        <item url="file://$PROJECT_DIR$/dist/build/static/js/main.ed6f34ef.js" />
-        <item url="file://$PROJECT_DIR$/dist/build/static/js/main.f8419092.js" />
-        <item url="file://$PROJECT_DIR$/dist/build/static/js/main.fb97e1ba.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.002890a3.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.05734c47.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.390a640d.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.5666a2be.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.8fe47c95.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.d8d847c0.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.e32ac8a2.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.ed6f34ef.js" />
         <item url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.f4b61b7f.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.f8419092.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.fb97e1ba.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/dist/build/static/js/main.f4b61b7f.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/dist/dist/dist/dist/src/components/text_list/BishunPlayer.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/dist/dist/dist/dist/src/components/text_list/BuShouSpeaker.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/dist/dist/dist/dist/src/components/text_list/PinSpeaker.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/dist/dist/dist/src/components/book_list/BookList.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/dist/dist/dist/src/components/text_list/BishunPlayer.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/dist/dist/dist/src/components/text_list/BuShouSpeaker.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/dist/dist/dist/src/components/text_list/PinSpeaker.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/dist/dist/dist/src/components/text_list/PinyinSpeaker.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/dist/dist/src/components/book_list/BookList.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/dist/dist/src/components/text_list/BishunPlayer.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/dist/dist/src/components/text_list/BuShouSpeaker.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/dist/dist/src/components/text_list/PinSpeaker.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/dist/dist/src/components/text_list/PinyinSpeaker.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/dist/dist/src/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/dist/src/components/text_list/TextList.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/dist/src/index.js" />
+        <item url="file://$PROJECT_DIR$/dist/dist/src/components/text_list/TextList.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/dist/build/static/js/main.002890a3.js" />
-      <root url="file://$PROJECT_DIR$/dist/build/static/js/main.05734c47.js" />
-      <root url="file://$PROJECT_DIR$/dist/build/static/js/main.390a640d.js" />
-      <root url="file://$PROJECT_DIR$/dist/build/static/js/main.5666a2be.js" />
-      <root url="file://$PROJECT_DIR$/dist/build/static/js/main.8fe47c95.js" />
-      <root url="file://$PROJECT_DIR$/dist/build/static/js/main.d8d847c0.js" />
-      <root url="file://$PROJECT_DIR$/dist/build/static/js/main.e32ac8a2.js" />
-      <root url="file://$PROJECT_DIR$/dist/build/static/js/main.ed6f34ef.js" />
-      <root url="file://$PROJECT_DIR$/dist/build/static/js/main.f8419092.js" />
-      <root url="file://$PROJECT_DIR$/dist/build/static/js/main.fb97e1ba.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/components/book_list/BookList.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/components/text_list/BishunPlayer.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/components/text_list/BuShouSpeaker.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/components/text_list/PinSpeaker.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/components/text_list/PinyinSpeaker.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/src/components/book_list/BookList.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/src/components/text_list/BishunPlayer.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/src/components/text_list/BuShouSpeaker.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/src/components/text_list/PinSpeaker.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/src/components/text_list/PinyinSpeaker.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/src/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/components/book_list/BookList.js" />
+      <root url="file://$PROJECT_DIR$/dist/src/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.002890a3.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.05734c47.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.390a640d.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.5666a2be.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.8fe47c95.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.d8d847c0.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.e32ac8a2.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.ed6f34ef.js" />
       <root url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.f4b61b7f.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.f8419092.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/build/static/js/main.fb97e1ba.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/build/static/js/main.f4b61b7f.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/dist/dist/dist/src/components/text_list/BishunPlayer.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/dist/dist/dist/src/components/text_list/BuShouSpeaker.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/dist/dist/dist/src/components/text_list/PinSpeaker.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/dist/dist/src/components/book_list/BookList.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/dist/dist/src/components/text_list/BishunPlayer.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/dist/dist/src/components/text_list/BuShouSpeaker.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/dist/dist/src/components/text_list/PinSpeaker.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/dist/dist/src/components/text_list/PinyinSpeaker.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/dist/src/components/book_list/BookList.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/dist/src/components/text_list/BishunPlayer.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/dist/src/components/text_list/BuShouSpeaker.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/dist/src/components/text_list/PinSpeaker.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/dist/src/components/text_list/PinyinSpeaker.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/dist/src/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/components/text_list/TextList.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/dist/src/index.js" />
+      <root url="file://$PROJECT_DIR$/dist/dist/src/components/text_list/TextList.js" />
     </CLASSES>
     <SOURCES />
   </library>
